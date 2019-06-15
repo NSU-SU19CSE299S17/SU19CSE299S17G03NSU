@@ -15,10 +15,10 @@
 
 ## Table of Contents
 
-1. [Project Description](https://github.com/Namerlight/SU19CSE299S17G03NSU/##Project)
-2. [Packages and Libraries](https://github.com/Namerlight/SU19CSE299S17G03NSU/##Packages-and-Libraries-Used)
-3. [Setup Instructions](https://github.com/Namerlight/SU19CSE299S17G03NSU/##Setup-Instructions)
-4. [Credits](https://github.com/Namerlight/SU19CSE299S17G03NSU/##Credits)
+1. [Project Description](https://github.com/Namerlight/SU19CSE299S17G03NSU/##1.-Project)
+2. [Packages and Libraries](https://github.com/Namerlight/SU19CSE299S17G03NSU/##2.-Packages-and-Libraries-Used)
+3. [Setup Instructions](https://github.com/Namerlight/SU19CSE299S17G03NSU/##3.-Setup-Instructions)
+4. [Credits](https://github.com/Namerlight/SU19CSE299S17G03NSU/##4.-Credits)
 
 
 ## 1. Project 
