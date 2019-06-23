@@ -3,14 +3,13 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-    <title>My Lists</title>
+    <title>Library</title>
 
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
-<body>
 
 <style>
 
@@ -26,6 +25,9 @@
     .grid-container{
         display: grid;
         grid-row-gap: 50px;
+        grid-template-rows:max-content;
+        padding: 50px;
+       justify-content:flex-start;
        scroll-behavior:smooth;
 
     }
@@ -64,16 +66,16 @@
             <h5 class="header col s12 light">A Catalogue of Educational Materials from the Internet</h5>
         </div>
         <div class="row center">
-                <h3 class="header center black-text" >My Lists</h3>
+                <h3 class="header center black-text" >Library</h3>
             </div>
     </div>
 </div>
 
 <br><br>
 
-<div class="container" style="padding-top:65px; padding-bottom: 100px; background: white; border-style: solid; border-start-end-radius: 3px; border-color: black">
-    <h4>List Name</h4>
-    <div class="grid-container" style="background: white; border-style: solid; border-start-end-radius: 3px; border-color: black; grid-template-rows:max-content; grid-template-columns: auto auto auto auto auto; justify-content:flex-start">
+<div class="container" style="padding-top:2px">
+<div class="grid-container" style="background: white; border-style: solid; border-start-end-radius: 3px; border-color: black">
+
     <ol>
         <div class="grid-item"> 
             <li>
@@ -126,17 +128,7 @@
 </ol>
 
 </div>
-<br><br><br>
 
-<div class="container" style= "background: white; border-style: solid; border-start-end-radius: 3px; border-color: black">
-<h4 style="text-align:center">Add</h4>
-<div class="grid-container" style="padding-top:50px; padding-bottom: 50px; grid-template-columns: auto auto auto auto; grid-template-rows: auto; grid-gap:10px; justify-content: center">
-<a href="pages/profile.html" id="books-button" class="btn-large waves-effect waves-light orange">Book</a>
-<a href="pages/profile.html" id="books-button" class="btn-large waves-effect waves-light orange">Video</a>
-<a href="pages/profile.html" id="books-button" class="btn-large waves-effect waves-light orange">Course</a>
-<a href="pages/profile.html" id="books-button" class="btn-large waves-effect waves-light orange">Other</a>
-</div>
-</div>
     </div>
     <br><br>
 </div>
@@ -178,8 +170,6 @@
             </div>
         </div>
     </footer>
-
-
 
 
 <!--  Scripts-->
