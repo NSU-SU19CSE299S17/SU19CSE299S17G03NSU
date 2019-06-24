@@ -41,15 +41,15 @@ Currently, the website is a work in progress and is being hosted on Google Fireb
 1. Download and install NodeJS from their [website](https://nodejs.org/en/).
 2. Make sure NPM is installed during the NodeJS installation process.
 3. Install the Google Firebase CLI
-`npm install -g firebase-tools`
-After that, log in to your google account, using `firebase login`
+```npm install -g firebase-tools```
+After that, log in to your google account, using ```firebase login```
 4. If it is necessary to install Materialize CSS, use
-`npm install materialize-css@next`
+```npm install materialize-css@next```
 5. In order to run the web page locally, use
-`firebase serve`
+```firebase serve```
 The default location is https://localhost:5000/
 In order to apply changes to online-hosted version, use
-`firebase deploy`.
+```firebase deploy```
 
 
 ## 4. Credits
