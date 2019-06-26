@@ -10,6 +10,8 @@
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/index.css" rel="stylesheet">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
 
 </head>
 
@@ -45,9 +47,8 @@
             <br>
             <div class="row center">
                 <a href="#links-to-other-sections" id="get-started-button" class="btn-large waves-effect waves-light white black-text">Get Started!</a>
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
                 <a href="#about-trism" id="about-button" class="btn-large waves-effect waves-light white black-text">About Trism</a>
-                <a class="waves-effect waves-light btn modal-trigger" href="#register-form">Modal</a>
 
             </div>
 
@@ -155,13 +156,32 @@
     </div>
 
 
-    <div id="register-form" class="modal">
-        <div class="modal-content">
-            <h4>Modal Header</h4>
-            <p>A bunch of text</p>
-        </div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    <div id="register-form" class="modal" style="width: 30%">
+        <div class="modal-content center">
+            <h4 class="center" style="font-family: serif">Register an Account</h4>
+            <br><br>
+            <div class="center" style="width: 80%; margin: auto">
+                <div class="input-field col s4 darken-1">
+                    <input id="emailaddr" type="email" class="password validate center">
+                    <label for="emailaddr">Enter your Email Address</label>
+                </div>
+                <div class="input-field col s4 darken-1">
+                    <input id="username" type="text" class="validate center">
+                    <label class="active" for="username">Enter your Username</label>
+                </div>
+                <div class="input-field col s4 darken-1">
+                    <input id="password" type="password" class="password validate center">
+                    <label for="password">Enter your Password</label>
+                </div>
+                <div class="input-field col s4 darken-1">
+                    <input id="confirmpassword" type="password" class="password validate center">
+                    <label for="confirmpassword">Confirm your Password</label>
+                </div>
+                <br>
+                <a class="btn waves-effect waves-light orange">Submit</a>
+                <br><br><hr>
+
+            </div>
         </div>
     </div>
 
@@ -204,18 +224,22 @@
 
 
 <!--  Scripts-->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="js/materialize.js"></script>
 <script src="js/init.js"></script>
-<script src="js/index.js">
-</script>
-            
-<script>
+<script src="js/index.js"></script>
+
+
+            <script>
     $(document).ready(function(){
         $('.modal').modal();
     });
 </script>
 
+
+    </div>
+</div>
 
 </body>
 </html>
