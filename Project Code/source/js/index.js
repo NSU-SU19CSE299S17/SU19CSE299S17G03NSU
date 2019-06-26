@@ -1,3 +1,4 @@
+src="https://code.jquery.com/jquery-2.1.1.min.js";
 
 
 document.getElementById("about-button").addEventListener("click", scrolltoAbout)
@@ -8,3 +9,7 @@ function scrolltoAbout() {
         behavior: 'smooth'
     });
 }
+
+$(document).ready(function(){
+    $('.modal').modal();
+});
