@@ -143,8 +143,33 @@
 <!-- Modal Structure -->
 <div id="modal1" class="modal">
   <div class="modal-content">
-    <h4>Modal Header</h4>
-    <p>A bunch of text</p>
+    <table>
+        <thead>
+          <tr>
+              <th>Name</th>
+              <th>Url</th>
+              <th>Type</th>
+              <th>Review</th>
+              <th>Tags</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td><input type="text" name="Rname"></td>
+            <td><input type="url" name="Rlink"></td>
+            <td> <select name="Rtype">
+                <option value="books">Books</option>
+                <option value="videos">Videos</option>
+                <option value="courses">Courses</option>
+                <option value="other">Other</option>
+              </select>
+            </td>
+            <td><input type="text" name="Review"></td>
+            <td><input type="text" name="Tags"></td>
+          </tr>
+        </tbody>
+      </table>
   </div>
   <div class="modal-footer">
     <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
