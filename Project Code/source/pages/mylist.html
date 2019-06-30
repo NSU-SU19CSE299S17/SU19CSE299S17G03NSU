@@ -130,14 +130,52 @@
     <br><br>
     <h4 style="text-align:center">Add</h4>
     <div class="grid-container" style="padding-top:50px; padding-bottom: 50px; grid-template-columns: auto auto auto auto; grid-template-rows: auto; grid-gap:10px; justify-content: center">
-    <a href="pages/profile.html" id="books-button" class="btn-large waves-effect waves-light orange">Book</a>
-    <a href="pages/profile.html" id="books-button" class="btn-large waves-effect waves-light orange">Video</a>
-    <a href="pages/profile.html" id="books-button" class="btn-large waves-effect waves-light orange">Course</a>
-    <a href="pages/profile.html" id="books-button" class="btn-large waves-effect waves-light orange">Other</a>
+        <!-- Modal Trigger -->
+        <a class="btn-large waves-effect waves-light orange" href="#modal1">Books</a>
+        <a class="btn-large waves-effect waves-light orange" href="#modal1">Videos</a>
+        <a class="btn-large waves-effect waves-light orange" href="#modal1">Courses</a>
+        <a class="btn-large waves-effect waves-light orange" href="#modal1">Courses</a>
     </div>
     </div>
 
 <br><br><br>
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <table>
+        <thead>
+          <tr>
+              <th>Name</th>
+              <th>Url</th>
+              <th>Type</th>
+              <th>Review</th>
+              <th>Tags</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td><input type="text" name="Rname"></td>
+            <td><input type="url" name="Rlink"></td>
+            <td> <select name="Rtype">
+                <option value="books">Books</option>
+                <option value="videos">Videos</option>
+                <option value="courses">Courses</option>
+                <option value="other">Other</option>
+              </select>
+            </td>
+            <td><input type="text" name="Review"></td>
+            <td><input type="text" name="Tags"></td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+  </div>
+</div>
+        
 
 <footer class="page-footer orange">
         <div class="container">
