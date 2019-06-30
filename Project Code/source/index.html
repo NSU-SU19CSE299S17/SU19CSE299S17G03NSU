@@ -179,12 +179,31 @@
                 </div>
                 <br>
                 <a class="btn waves-effect waves-light orange">Submit</a>
-                <br><br><hr>
+                <br><br><hr><br>
 
             </div>
         </div>
     </div>
 
+    <div id="login-form" class="modal" style="width: 30%">
+        <div class="modal-content center">
+            <h4 class="center" style="font-family: serif">Login</h4>
+            <br><br>
+            <div class="center" style="width: 80%; margin: auto">
+                <div class="input-field col s4 darken-1">
+                    <input id="loginemail" type="email" class="validate center">
+                    <label for="loginemail">Enter your Email Address</label>
+                </div>
+                <div class="input-field col s4 darken-1">
+                    <input id="loginpass" type="password" class="password validate center">
+                    <label for="loginpass">Enter your Password</label>
+                </div>
+                <br>
+                <a class="btn submit waves-effect waves-light orange">Submit</a>
+                <br><br><hr><br>
+            </div>
+        </div>
+    </div>
 
 <footer class="page-footer orange">
     <div class="container">
@@ -231,7 +250,7 @@
 <script src="js/index.js"></script>
 
 
-            <script>
+<script>
     $(document).ready(function(){
         $('.modal').modal();
     });
