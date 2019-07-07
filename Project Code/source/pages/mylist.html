@@ -33,7 +33,10 @@
     .grid-item{
         padding: 20px;
     }
-    
+
+    .dropdown-content li > a, .dropdown-content li > span {
+    color: #fb8c00 
+}
 </style>
     
 
@@ -159,12 +162,13 @@
             <td><input type="text" name="Rname"></td>
             <td><input type="url" name="Rlink"></td>
             <td>
-                <select name="Rtype">
-                <option value="books" selected>Books</option>
-                <option value="videos">Videos</option>
-                <option value="courses">Courses</option>
-                <option value="other">Other</option>
-              </select>
+                    <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Type</a>
+                    <ul id='dropdown1' class='dropdown-content'>
+                            <li><a href="#!">Books</a></li>
+                            <li><a href="#!">Videos</a></li>
+                            <li><a href="#!">Courses</a></li>
+                            <li><a href="#!">Other</a></li>
+                          </ul>
             </td>
             <td><input type="text" name="Review"></td>
             <td><input type="text" name="Tags"></td>
@@ -222,6 +226,9 @@
 <script src="../js/materialize.js"></script>
 <script src="../js/init.js"></script>
 <script src="../js/mylist.js"></script>
+<script>
+$('.dropdown-trigger').dropdown();
+</script>
 
 </body>
 </html>
