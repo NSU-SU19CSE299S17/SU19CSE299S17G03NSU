@@ -8,3 +8,9 @@ function scrolltoAbout() {
         behavior: 'smooth'
     });
 }
+
+$(document).ready(function() {
+
+    $('#modal1').modal();
+    
+  });
