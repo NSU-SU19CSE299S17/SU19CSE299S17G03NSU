@@ -132,7 +132,7 @@
     <div class="grid-container" style="padding-top:50px; padding-bottom: 50px; grid-template-columns: auto auto auto auto; grid-template-rows: auto; grid-gap:10px; justify-content: center">
         <!-- Modal Trigger -->
         <a class="btn-large waves-effect waves-light orange" href="#modal1" onclick="$('#modal1').modal('open');">Books</a>
-        <a class="btn-large waves-effect waves-light orange" href="#modal1" onclick="$('#modal1').modal('open');">Videos</a>
+        <a class="btn-large waves-effect waves-light orange" href="#modal1" onclick="$('#modal1').modal('open');" >Videos</a>
         <a class="btn-large waves-effect waves-light orange" href="#modal1" onclick="$('#modal1').modal('open');">Courses</a>
         <a class="btn-large waves-effect waves-light orange" href="#modal1" onclick="$('#modal1').modal('open');">Other</a>
     </div>
@@ -158,8 +158,9 @@
           <tr>
             <td><input type="text" name="Rname"></td>
             <td><input type="url" name="Rlink"></td>
-            <td> <select name="Rtype">
-                <option value="books">Books</option>
+            <td>
+                <select name="Rtype">
+                <option value="books" selected>Books</option>
                 <option value="videos">Videos</option>
                 <option value="courses">Courses</option>
                 <option value="other">Other</option>
@@ -172,7 +173,7 @@
       </table>
   </div>
   <div class="modal-footer">
-    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Add</a>
   </div>
 </div>
         
@@ -220,7 +221,7 @@
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="../js/materialize.js"></script>
 <script src="../js/init.js"></script>
-<script src="../js/index.js"></script>
+<script src="../js/mylist.js"></script>
 
 </body>
 </html>
