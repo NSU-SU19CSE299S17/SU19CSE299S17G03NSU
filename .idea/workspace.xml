@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df00fe12-d3eb-422b-8068-94058c8b419d" name="Default Changelist" comment="" />
+    <list default="true" id="df00fe12-d3eb-422b-8068-94058c8b419d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Project Code/source/pages/library.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project Code/source/pages/library.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,34 +13,21 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project Code/source/pages/mylist.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-303">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Project Code/source/pages/library_list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="64" column="32" lean-forward="true" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project Code/source/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-612" />
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Project Code/source/pages/library.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1114" />
+            <state relative-caret-position="501">
+              <caret line="85" column="61" lean-forward="true" selection-start-line="85" selection-start-column="61" selection-end-line="85" selection-end-column="61" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
@@ -52,6 +41,7 @@
       <list>
         <option value="$PROJECT_DIR$/Project Code/source/pages/mylist.html" />
         <option value="$PROJECT_DIR$/Project Code/source/pages/library_list.html" />
+        <option value="$PROJECT_DIR$/Project Code/source/pages/library.html" />
       </list>
     </option>
   </component>
@@ -127,12 +117,12 @@
       <option name="presentableId" value="Default" />
       <updated>1562589829421</updated>
       <workItem from="1562589832589" duration="71000" />
-      <workItem from="1563122301224" duration="1386000" />
+      <workItem from="1563122301224" duration="1547000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1457000" />
+    <option name="totallyTimeSpent" value="1618000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -163,16 +153,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Project Code/source/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-612" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project Code/source/pages/library.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1114" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Project Code/source/pages/mylist.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-303">
@@ -182,8 +162,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Project Code/source/pages/library_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="64" column="32" lean-forward="true" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
+        <state relative-caret-position="-425">
+          <caret line="62" column="16" lean-forward="true" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project Code/source/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-612" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project Code/source/pages/library.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="85" column="61" lean-forward="true" selection-start-line="85" selection-start-column="61" selection-end-line="85" selection-end-column="61" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
