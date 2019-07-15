@@ -241,5 +241,17 @@ $('.dropdown-trigger').dropdown();
 <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-firestore.js"></script>
 
+<!-- Initialize Cloud Firestore through Firebase-->
+<script>
+firebase.initializeApp({
+  apiKey: "AIzaSyBiIbzfYGJKAF31_8uOWkNL96L-_RrLgUs",
+  authDomain: "trism-def99.firebaseapp.com",
+  projectId: "trism-def99"
+});
+
+var db = firebase.firestore();
+db.settings({timestampsInSnapshots: true});
+</script>
+
 </body>
 </html>
