@@ -1,25 +1,23 @@
-const resourcelist=document.querySelector('#resource-list');
+const resourcelist= document.querySelector('#resource-list');
 
-function renderList(doc){
-    let li= document.createElement('li');
-    let name= document.createElement('span');
-    let type= document.createElement('lspan');
+function renderlist(doc){
+/*let li= document.createElement('li');
+let name= document.createElement('span');
+let type= document.createElement('span');
 
-    li.setAttribute('data-id',doc.id);
-    name.textContent= doc.data().Name;
-    type.textContent= doc.data().Type;
+li.setAttribute('data-id',doc.id);*/
+const rname=doc.data().Name;
+const rtype=doc.data().Type;
 
-    li.appendChild(name);
-    li.appendChild(type);
-
-    resourcelist.appendChild(li);
+$("#resource-name").append(rname);
+$("#resource-type").append(rtype);
 
 }
 
-
-db.collection('Lists').get().then((snapshot)=> {
-snapshot.docs.forEach(doc => {
-    renderList(doc);
-})
-
+db.collection('Lists').get().then((snapshot) => {
+ snapshot.docs.forEach(doc => {
+   
+    renderlist(doc);
+    
+ })
 })
