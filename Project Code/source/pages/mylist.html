@@ -79,7 +79,7 @@
 <br><br>
 
 <div class="container" style="padding-top:65px; padding-bottom: 100px; background: white">
-    <table class="striped">
+    <table id="resource-list" class="striped">
         <thead>
           <tr>
               <th>Name</th>
@@ -90,24 +90,9 @@
           </tr>
         </thead>
 
-        <tbody  id="resource-list">
-        <tr>
-        <td id="resource-name">
-
-        </td>
-        <td>
-
-        </td>
-        <td id="resource-type">
-
-        </td>
-        <td>
-
-        </td>
-        <td>
-            
-        </td>
-        </tr>
+        <tbody>
+       
+      </tbody>
       </table>
     </div>
 
@@ -245,7 +230,7 @@ var config = {
   const db= firebase.firestore();
 </script>
 
-<script src="listdb.js"></script>
+<script src="../js/listdb.js"></script>
 
 </body>
 </html>
