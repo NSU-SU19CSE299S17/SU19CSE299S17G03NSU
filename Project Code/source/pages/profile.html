@@ -58,14 +58,25 @@
 <div class="container" style="background: white; height: 500px">
     <div class="row">
         <div class="col s12 m2 valign-wrapper">
-            <ul>
-                <li><button onclick="onTabClick()" class="btn-flat btn-large collection-item waves-effect waves-light orange white-text active" style="width: 300px"><h5>My Info</h5></button></li><br>
-                <li><button onclick="onTabClick()" class="btn-flat btn-large collection-item waves-effect waves-light orange white-text" style="width: 300px"><h5>My Lists</h5></button></li><br>
-                <li><button onclick="onTabClick()" class="btn-flat btn-large collection-item waves-effect waves-light orange white-text" style="width: 300px"><h5>Favorites</h5></button></li><br>
-                <li><button onclick="onTabClick()" class="btn-flat btn-large collection-item waves-effect waves-light orange white-text" style="width: 300px"><h5>Update Info</h5></button></li>
+            <ul id="library-table" class="tabs tabs-fixed-width center">
+                <li class="tab col s4"><a class="waves-effect waves-light orange white-text" href="#books-tab">My Info</a></li>
+                <li class="tab col s3"><a class="waves-effect waves-light orange white-text" href="#videos-tab">My Lists</a></li>
+                <li class="tab col s3"><a class="waves-effect waves-light orange white-text" href="#courses-tab">Favourites</a></li>
+                <li class="tab col s3"><a class="waves-effect waves-light orange white-text" href="#other-tab">Update Info</a></li>
             </ul>
         </div>
         <div class="col s12 m10 valign-wrapper">
+            <div id="personal-info" class="col s12 blue">
+            </div>
+
+            <div id="my-lists" class="col s12 red">
+            </div>
+
+            <div id="favourites" class="col s12 green">
+            </div>
+
+            <div id="update-info" class="col s12 purple">
+            </div>
 
             <div id="personal-info" class="container tab-content" style="padding: 57px">
                 <div class="row valign-wrapper">
