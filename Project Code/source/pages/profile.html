@@ -56,97 +56,90 @@
 
 
 <div class="container" style="background: white; height: 500px">
-    <div class="row">
-        <div class="col s12 m2 valign-wrapper">
-            <ul id="library-table" class="tabs tabs-fixed-width center">
-                <li class="tab col s4"><a class="waves-effect waves-light orange white-text" href="#books-tab">My Info</a></li>
-                <li class="tab col s3"><a class="waves-effect waves-light orange white-text" href="#videos-tab">My Lists</a></li>
-                <li class="tab col s3"><a class="waves-effect waves-light orange white-text" href="#courses-tab">Favourites</a></li>
-                <li class="tab col s3"><a class="waves-effect waves-light orange white-text" href="#other-tab">Update Info</a></li>
-            </ul>
-        </div>
-        <div class="col s12 m10 valign-wrapper" style="padding: 57px">
-            <div id="personal-info" class="col s12">
-                <div class="row valign-wrapper">
-                    <div class="col s2">
-                        <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="circle responsive-img"> notice the "circle" class
-                    </div>
-                    <div class="col s10">
-                        <span class="black-text">
-                            <h3>Username</h3>
-                        </span>
-                    </div>
-                </div>
+
+    <ul id="library-table" class="tabs tabs-fixed-width center">
+        <li class="tab col s4"><a class="waves-effect waves-light orange white-text" href="#personal-info">My Info</a></li>
+        <li class="tab col s3"><a class="waves-effect waves-light orange white-text" href="#my-lists">My Lists</a></li>
+        <li class="tab col s3"><a class="waves-effect waves-light orange white-text" href="#favourites">Favourites</a></li>
+        <li class="tab col s3"><a class="waves-effect waves-light orange white-text" href="#update-info">Update Info</a></li>
+    </ul>
+
+    <div id="personal-info" class="col s12">
+        <div class="row valign-wrapper">
+            <div class="col s2">
+                <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="circle responsive-img"> notice the "circle" class
+            </div>
+            <div class="col s10">
                 <span class="black-text">
-                    <h4>Email Address</h4>
+                    <h3>Username</h3>
                 </span>
             </div>
-
-            <div id="my-lists" class="col s12" style="padding: 57px">
-                <h4>My Lists</h4>
-                <table class="striped highlight responsive-table">
-                    <thead>
-                    <tr>
-                        <th>Created By</th>
-                        <th>List Name</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>Username</td>
-                        <td><a href="#">List1</a></td>
-                    </tr>
-                    <tr>
-                        <td>Username</td>
-                        <td><a href="#">List2</a></td>
-                    </tr>
-                    <tr>
-                        <td>Username</td>
-                        <td><a href="#">List3</a></td>
-                    </tr>
-                    </tbody>
-                </table>
-                <br><br>
-                <span class="black-text">
-                    <a class="" href="mylist.html"> Create New List</a>
-                </span>
-            </div>
-
-            <div id="favourites" class="col s12" style="padding: 57px">
-                <h4>Favourited Lists</h4>
-
-                <table class="striped highlight responsive-table">
-                    <thead>
-                    <tr>
-                        <th>Created By</th>
-                        <th>List Name</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>UsernameA</td>
-                        <td><a href="#">List1</a></td>
-                    </tr>
-                    <tr>
-                        <td>UsernameB</td>
-                        <td><a href="#">List2</a></td>
-                    </tr>
-                    <tr>
-                        <td>UsernameC</td>
-                        <td><a href="#">List3</a></td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div id="update-info" class="col s12" style="padding: 57px">
-            </div>
-
         </div>
+        <span class="black-text">
+            <h4>Email Address</h4>
+        </span>
+    </div>
+    <div id="my-lists" class="col s12" style="padding: 57px">
+        <h4>My Lists</h4>
+        <table class="striped highlight responsive-table">
+            <thead>
+            <tr>
+                <th>Created By</th>
+                <th>List Name</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Username</td>
+                <td><a href="#">List1</a></td>
+            </tr>
+            <tr>
+                <td>Username</td>
+                <td><a href="#">List2</a></td>
+            </tr>
+            <tr>
+                <td>Username</td>
+                <td><a href="#">List3</a></td>
+            </tr>
+            </tbody>
+        </table>
+        <br><br>
+        <span class="black-text">
+            <a class="" href="mylist.html"> Create New List</a>
+        </span>
+    </div>
+    <div id="favourites" class="col s12" style="padding: 57px">
+        <h4>Favourited Lists</h4>
+        <table class="striped highlight responsive-table">
+            <thead>
+            <tr>
+                <th>Created By</th>
+                <th>List Name</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>UsernameA</td>
+                <td><a href="#">List1</a></td>
+            </tr>
+            <tr>
+                <td>UsernameB</td>
+                <td><a href="#">List2</a></td>
+            </tr>
+            <tr>
+                <td>UsernameC</td>
+                <td><a href="#">List3</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="update-info" class="col s12" style="padding: 57px">
+
     </div>
 
-
 </div>
+
+
 
 
 
