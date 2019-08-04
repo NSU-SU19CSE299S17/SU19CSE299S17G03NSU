@@ -1,7 +1,7 @@
 
 function sortlist(doc){
 
-const rname= doc.data().Name;
+const rname= doc.data().NameOfResource;
 const rtype=doc.data().Type;
 const rurl=doc.data().Url;
 var tableRef = document.getElementById('resource-list');
@@ -28,8 +28,16 @@ var tableRef = document.getElementById('resource-list');
 
 db.collection('Lists').get().then((snapshot) => {
  snapshot.docs.forEach(doc => {
-   
-    sortlist(doc);
 
+  console.log(doc.id);
+  const id= doc.id;
+  
+  db.collection('Lists').doc(doc.id).collection('Entries').get().then((snapshot) => {
+    snapshot.docs.forEach(doc => {
+  
+   sortlist(doc);
+
+ })
+})
  })
 })
