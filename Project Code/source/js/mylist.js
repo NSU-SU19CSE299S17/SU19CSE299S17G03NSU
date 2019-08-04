@@ -1,7 +1,7 @@
 const request = require('request');
 const cheerio = require('cheerio');
 
-let url = 'https://www.coursera.org/learn/algorithms-part1'
+let url = 'https://www.coursera.org/learn/algorithms-part1';
 
 request({
     method: 'GET',
