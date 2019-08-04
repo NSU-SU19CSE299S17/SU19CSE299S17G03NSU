@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df00fe12-d3eb-422b-8068-94058c8b419d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project Code/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Project Code/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project Code/source/js/mylist.js" beforeDir="false" afterPath="$PROJECT_DIR$/Project Code/source/js/mylist.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project Code/source/pages/mylist.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project Code/source/pages/mylist.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,20 +15,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project Code/source/pages/mylist.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="173" column="83" selection-start-line="173" selection-start-column="83" selection-end-line="173" selection-end-column="83" />
+            <state relative-caret-position="200">
+              <caret line="225" lean-forward="true" selection-start-line="225" selection-end-line="225" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Project Code/source/js/mylist.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+            <state relative-caret-position="272">
+              <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -49,6 +52,7 @@
         <option value="$PROJECT_DIR$/Project Code/source/pages/library.html" />
         <option value="$PROJECT_DIR$/Project Code/source/js/webscraper.js" />
         <option value="$PROJECT_DIR$/Project Code/source/pages/mylist.html" />
+        <option value="$PROJECT_DIR$/Project Code/source/js/mylist.js" />
       </list>
     </option>
   </component>
@@ -121,12 +125,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Node.js.mylist.js">
     <configuration name="listdb.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="listdb.js" working-dir="$PROJECT_DIR$/Project Code/source/js">
+      <method v="2" />
+    </configuration>
+    <configuration name="mylist.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="mylist.js" working-dir="$PROJECT_DIR$/Project Code/source/js">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.mylist.js" />
         <item itemvalue="Node.js.listdb.js" />
       </list>
     </recent_temporary>
@@ -144,22 +152,25 @@
       <workItem from="1562589832589" duration="71000" />
       <workItem from="1563122301224" duration="2754000" />
       <workItem from="1564321166319" duration="3357000" />
+      <workItem from="1564825263958" duration="599000" />
+      <workItem from="1564832495873" duration="1797000" />
+      <workItem from="1564924365033" duration="5207000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6740000" />
+    <option name="totallyTimeSpent" value="15969000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20231824" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20231824" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.37486458" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -167,7 +178,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.29577464" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.29577464" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -236,13 +247,6 @@
     <entry file="file://$PROJECT_DIR$/Project Code/source/pages/listdb.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project Code/source/js/mylist.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Project Code/source/js/webscraper.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -250,10 +254,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Project Code/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1122">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Project Code/source/pages/mylist.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="173" column="83" selection-start-line="173" selection-start-column="83" selection-end-line="173" selection-end-column="83" />
+        <state relative-caret-position="200">
+          <caret line="225" lean-forward="true" selection-start-line="225" selection-end-line="225" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project Code/source/js/mylist.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
         </state>
       </provider>
     </entry>

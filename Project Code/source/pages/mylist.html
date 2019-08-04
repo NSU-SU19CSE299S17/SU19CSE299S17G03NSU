@@ -154,7 +154,15 @@
             <td><input type="text" name="Rname"></td>
             <td><input type="url" name="Rlink"></td>
             <td>
-                    
+                <div class="input-field">
+                    <select>
+                        <option value="" disabled selected>Type of Material</option>
+                        <option value="1">Book</option>
+                        <option value="2">Video</option>
+                        <option value="3">Online Course</option>
+                        <option value="4">Other</option>
+                    </select>
+                </div>
             </td>
             <td><input type="text" name="Review"></td>
             <td><input type="text" name="Tags"></td>
@@ -163,7 +171,7 @@
       </table>
 
   </div>
-  <div class="modal-footer" alig>
+  <div class="modal-footer">
       <a href="#!" class="modal-close waves-effect waves-green btn orange">Update Info from URL</a>
       <a href="#!" class="modal-close waves-effect waves-green btn orange">Add Item</a>
   </div>
@@ -218,6 +226,10 @@
 
 <script>
 $('.dropdown-trigger').dropdown();
+
+$(document).ready(function(){
+    $('select').formSelect();
+});
 </script>
 
 <!-- Firebase App (the core Firebase SDK)-->
