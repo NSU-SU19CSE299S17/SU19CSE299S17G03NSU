@@ -71,7 +71,7 @@
             <h5 class="header col s12 light">A Catalogue of Educational Materials from the Internet</h5>
         </div>
         <div class="row center">
-                <h3 class="header center black-text" >My Lists</h3>
+                <h3 class="header center black-text" id=listHeader></h3>
             </div>
     </div>
 </div>
@@ -231,6 +231,13 @@ var config = {
 </script>
 
 <script src="../js/listdb.js"></script>
+
+<script>
+    var href = document.location.href;
+    var listname = href.split('?')[1];
+    document.getElementById('listHeader').innerHTML = listname;
+    
+</script>
 
 </body>
 </html>
