@@ -36,7 +36,7 @@
 
 
     .dropdown-content li > a, .dropdown-content li > span {
-    color: #fb8c00 
+    color: #fb8c00
 }
 
 
@@ -90,9 +90,25 @@
           </tr>
         </thead>
 
-        <tbody>
-       
-      </tbody>
+        <tbody  id="resource-list">
+        <tr>
+        <td id="resource-name">
+
+        </td>
+        <td>
+
+        </td>
+        <td id="resource-type">
+
+        </td>
+        <td>
+
+        </td>
+        <td>
+
+        </td>
+        </tr>
+
       </table>
     </div>
 
@@ -139,25 +155,29 @@
             <td><input type="text" name="Rname"></td>
             <td><input type="url" name="Rlink"></td>
             <td>
-                    <a class='dropdown-trigger btn-flat' href='#' data-target='dropdown1'>Type</a>
-                    <ul id='dropdown1' class='dropdown-content'>
-                            <li><a href="#!">Books</a></li>
-                            <li><a href="#!">Videos</a></li>
-                            <li><a href="#!">Courses</a></li>
-                            <li><a href="#!">Other</a></li>
-                          </ul>
+                <div class="input-field">
+                    <select>
+                        <option value="" disabled selected>Type of Material</option>
+                        <option value="1">Book</option>
+                        <option value="2">Video</option>
+                        <option value="3">Online Course</option>
+                        <option value="4">Other</option>
+                    </select>
+                </div>
             </td>
             <td><input type="text" name="Review"></td>
             <td><input type="text" name="Tags"></td>
           </tr>
         </tbody>
       </table>
+
   </div>
   <div class="modal-footer">
-    <a href="#!" class="modal-close waves-effect waves-green btn orange">Add</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn orange">Update Info from URL</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn orange">Add Item</a>
   </div>
 </div>
-        
+
 
 <footer class="page-footer orange">
         <div class="container">
@@ -203,8 +223,14 @@
 <script src="../js/materialize.js"></script>
 <script src="../js/init.js"></script>
 <script src="../js/mylist.js"></script>
+<script src="../js/webscraper.js"></script>
+
 <script>
 $('.dropdown-trigger').dropdown();
+
+$(document).ready(function(){
+    $('select').formSelect();
+});
 </script>
 
 <!-- Firebase App (the core Firebase SDK)-->
