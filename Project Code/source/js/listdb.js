@@ -5,7 +5,6 @@ const rtype=doc.data().Type;
 const rurl=doc.data().Url;
 
 var tableRef = document.getElementById('resource-list');
-var addItemRef = document.querySelector('add-new-item');
 
     // Insert a row in the table after the last row
     var newRow   = tableRef.insertRow(-1);
@@ -42,6 +41,19 @@ db.collection('Lists').get().then((snapshot) => {
     })
 });
 
-addItemRef.addEventListener()
+const addItemRef = document.getElementById('add-new-item');
+
+addItemRef.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    db.collection('Lists').get().then((snapshot) => {
+
+        db.collection('Lists').doc(doc.id).collection('Entries').add({
+            NameOfResource: addItemRef.Rname.val(),
+            Type: addItemRef.Rtype.val(),
+            URL: addItemRef.Rlink.val()
+        })
+    });
+});
 
 
