@@ -44,8 +44,6 @@
 </style>
 
 
-<body>
-
 <nav class="deep-orange lighten-1" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="../index.html" class="brand-logo">Logo</a>
         <ul class="right hide-on-med-and-down">
@@ -90,37 +88,33 @@
           </tr>
         </thead>
 
-        <tbody  id="resource-list">
+        <tbody id="resource-list-body">
         <tr>
-        <td id="resource-name">
+            <td id="resource-name">
+            </td>
 
-        </td>
-        <td>
+            <td>
+            </td>
 
-        </td>
-        <td id="resource-type">
+            <td id="resource-type">
+            </td>
 
-        </td>
-        <td>
+            <td>
+            </td>
 
-        </td>
-        <td>
-
-        </td>
+            <td>
+            </td>
         </tr>
 
       </table>
-    </div>
-
 </div>
+
 
 <br><br><br>
 
-    </div>
 
     <br><br>
 
-</div>
 
 <div class="container" style= "background: white">
     <br><br>
@@ -138,38 +132,42 @@
 
 <!-- Modal Structure -->
 <div id="modal1" class="modal">
-  <div class="modal-content">
-    <table>
-        <thead>
-          <tr>
-              <th>Name</th>
-              <th>Url</th>
-              <th>Type</th>
-              <th>Review</th>
-              <th>Tags</th>
-          </tr>
-        </thead>
+    <div class="modal-content">
+        <form id="add-new-item">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Url</th>
+                        <th>Type</th>
+                        <th>Review</th>
+                        <th>Tags</th>
+                    </tr>
+                </thead>
 
-        <tbody>
-          <tr>
-            <td><input type="text" name="Rname"></td>
-            <td><input type="url" name="Rlink"></td>
-            <td>
-                <div class="input-field">
-                    <select>
-                        <option value="" disabled selected>Type of Material</option>
-                        <option value="1">Book</option>
-                        <option value="2">Video</option>
-                        <option value="3">Online Course</option>
-                        <option value="4">Other</option>
-                    </select>
-                </div>
-            </td>
-            <td><input type="text" name="Review"></td>
-            <td><input type="text" name="Tags"></td>
-          </tr>
-        </tbody>
-      </table>
+                <tbody>
+
+                    <tr>
+
+                        <td><input type="text" name="Rname"></td>
+                        <td><input type="url" name="Rlink"></td>
+                        <td>
+                            <div class="input-field">
+                                <select>
+                                    <option value="" disabled selected>Type of Material</option>
+                                    <option value="1">Book</option>
+                                    <option value="2">Video</option>
+                                    <option value="3">Online Course</option>
+                                    <option value="4">Other</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td><input type="text" name="Review"></td>
+                        <td><input type="text" name="Tags"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
 
   </div>
   <div class="modal-footer">
@@ -223,10 +221,11 @@
 <script src="../js/materialize.js"></script>
 <script src="../js/init.js"></script>
 <script src="../js/mylist.js"></script>
-<script src="../js/webscraper.js"></script>
 
 <script>
 $('.dropdown-trigger').dropdown();
+
+$('#modal1').modal();
 
 $(document).ready(function(){
     $('select').formSelect();
@@ -259,4 +258,5 @@ var config = {
 <script src="../js/listdb.js"></script>
 
 </body>
+
 </html>
