@@ -28,8 +28,8 @@ z-index:1;
 left:0;
 top:0;
 height:100%;
-width:100%;
-overflow: auto;
+width:30%;
+overflow:auto;
 background-color:white;
 
 }
@@ -42,6 +42,22 @@ background-color:white;
     width:90%;
 }
 
+.closeBtn{
+
+    color: #ccc;
+    float: left;
+    font-size: 30px;
+    position:absolute;
+    top:3px;
+    left:17px;
+}
+
+.closeBtn:hover,.closeBtn:focus{
+
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 </style>
 
@@ -183,8 +199,9 @@ background-color:white;
 
 
     <div id="register-form" class="modal" style="width: 30%">
+        <span class="closeBtn"> &times; </span>
         <div class="modal-content">
-            <h4 class="center" style="font-family: serif">Register an Account</h4>
+            <h4 class="center">Register an Account</h4>
             <br><br>
             <div class="center" style="width: 90%; margin: auto">
                 <div class="input-field col s4 darken-1">
@@ -212,8 +229,9 @@ background-color:white;
     </div>
 
     <div id="login-form" class="modal" style="width: 30%">
+    <span class="closeBtn"> &times; </span>
         <div class="modal-content">
-            <h4 class="center" style="font-family: serif">Login</h4>
+            <h4 class="center">Login</h4>
             <br><br>
             <div class="center" style="width: 80%; margin: auto">
                 <div class="input-field col s4 darken-1">
