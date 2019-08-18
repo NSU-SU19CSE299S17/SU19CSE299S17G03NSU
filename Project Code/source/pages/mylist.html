@@ -150,7 +150,7 @@
                     <tr>
 
                         <td><input type="text" name="Rname"></td>
-                        <td><input type="url" name="Rlink"></td>
+                        <td><input type="url" id='urllink' name="Rlink"></td>
                         <td>
                                 <select class="input-field" name="Rtype">
                                     <option value="" disabled selected>Type of Material</option>
@@ -257,7 +257,16 @@ var config = {
 
 <script>
 
-    let url = 'https://www.coursera.org/learn/algorithms-part1';
+    //let url = 'https://www.coursera.org/learn/algorithms-part1';
+
+    let url = getURL();
+
+    function getURL() {
+        let link = document.getElementById('urllink').valueOf();
+        console.log(link);
+        return link;
+    }
+
 
     request({
         method: 'GET',
