@@ -55,5 +55,3 @@ addItemRef.addEventListener('submit', (event) => {
         })
     });
 });
-
-

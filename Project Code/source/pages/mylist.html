@@ -167,7 +167,7 @@
             </table>
             <br>
             <br>
-            <button class="waves-effect waves-green btn orange">Update Info from URL</button>
+            <button class="waves-effect waves-green btn orange" onclick="placeName()">Update Info from URL</button>
             <button class="waves-effect waves-green btn orange">Add Item</button>
         </form>
 
@@ -258,43 +258,48 @@ var config = {
 <script>
 
     //let url = 'https://www.coursera.org/learn/algorithms-part1';
-
-    let url = getURL();
-
+    
     function getURL() {
         let link = document.getElementById('urllink').valueOf();
         console.log(link);
         return link;
     }
 
+    function placeName() {
 
-    request({
-        method: 'GET',
-        url: url
+        let url = getURL();
 
-    }, (err, res, html) => {
+        request({
+            method: 'GET',
+            url: url
 
-        if (err) return console.error(err);
+        }, (err, res, html) => {
 
-        let $ = cheerio.load(html);
-        let title = $('title').text();
+            if (err) return console.error(err);
 
-        if (url.search('coursera')) {
+            let $ = cheerio.load(html);
+            let title = $('title').text();
 
-            var pos = title.indexOf("Coursera");
-            var trimmed_title = title.slice(0, pos+8);
-            console.log(trimmed_title);
-            document.write(trimmed_title);
+            if (url.search('coursera')) {
 
-        } else {
+                var pos = title.indexOf("Coursera");
+                var trimmed_title = title.slice(0, pos+8);
+                console.log(trimmed_title);
+                document.write(trimmed_title);
 
-            console.log(title);
+            } else {
 
-            document.write(title);
+                console.log(title);
 
-        }
+                document.write(title);
 
-    });
+            }
+
+        });
+    }
+
+
+
 
 </script>
 
