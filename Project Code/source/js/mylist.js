@@ -1,4 +1,4 @@
-$(document).ready(function() {
+/* $(document).ready(function() {
     $('#modal1').modal();
 });
 
@@ -33,4 +33,4 @@ request({
 
     }
 
-});
+}); */
