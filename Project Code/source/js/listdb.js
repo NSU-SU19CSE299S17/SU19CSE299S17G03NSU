@@ -26,7 +26,7 @@ var tableRef = document.getElementById('resource-list');
 
 }
 
-let listsRef = db.collection('Lists');
+/*let listsRef = db.collection('Lists');
 let query = listsRef.where('NameOfList  ', '==', 'List1').get()
   .then(snapshot => {
     if (snapshot.empty) {
@@ -40,16 +40,13 @@ let query = listsRef.where('NameOfList  ', '==', 'List1').get()
   })
   .catch(err => {
     console.log('Error getting documents', err);
-  });
+  });*/
 
 
-/*db.collectionGroup('Entries').where('Type', '==','Other' ).get().then(function(querySnapshot) {
+db.collectionGroup('Entries').where('NameOfList', '==','List1' ).where('Owner','==','User1').get().then(function(querySnapshot) {
 
   querySnapshot.forEach(function(doc) {
     console.log(doc.id, ' => ', doc.data());
+    sortlist(doc);
   });
 });
-
-
-   sortlist(doc);
-    } */
