@@ -2,8 +2,8 @@
 function sortlist(doc){
 
 const rname= doc.data().NameOfResource;
-const rtype=doc.data().Type;
-const rurl=doc.data().Url;
+const rtype= doc.data().Type;
+const rurl= doc.data().Url;
 var tableRef = document.getElementById('resource-list');
 
   // Insert a row in the table after the last row
@@ -26,18 +26,10 @@ var tableRef = document.getElementById('resource-list');
 
 }
 
-db.collection('Lists').get().then((snapshot) => {
- snapshot.docs.forEach(doc => {
+db.collectionGroup('Entries').where('NameOfList', '==','List1' ).where('Owner','==','User1').get().then(function(querySnapshot) {
 
-  console.log(doc.id);
-  const id= doc.id;
-  
-  db.collection('Lists').doc(doc.id).collection('Entries').get().then((snapshot) => {
-    snapshot.docs.forEach(doc => {
-  
-   sortlist(doc);
-
- })
-})
- })
-})
+  querySnapshot.forEach(function(doc) {
+    console.log(doc.id, ' => ', doc.data());
+    sortlist(doc);
+  });
+});

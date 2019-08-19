@@ -9,8 +9,6 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-</head>
-<body>
 
 <style>
 
@@ -42,7 +40,7 @@
 
 
 </style>
-
+</head>
 
 <body>
 
@@ -71,7 +69,7 @@
             <h5 class="header col s12 light">A Catalogue of Educational Materials from the Internet</h5>
         </div>
         <div class="row center">
-                <h3 class="header center black-text" >My Lists</h3>
+                <h3 class="header center black-text" id=listHeader></h3>
             </div>
     </div>
 </div>
@@ -89,34 +87,12 @@
               <th>Tags</th>
           </tr>
         </thead>
-
-        <tbody  id="resource-list">
-        <tr>
-        <td id="resource-name">
-
-        </td>
-        <td>
-
-        </td>
-        <td id="resource-type">
-
-        </td>
-        <td>
-
-        </td>
-        <td>
-
-        </td>
-        </tr>
-
+        <tbody>
+        </tbody>
       </table>
     </div>
 
-</div>
-
 <br><br><br>
-
-    </div>
 
     <br><br>
 
@@ -128,7 +104,7 @@
     <div class="grid-container" style="padding-top:50px; padding-bottom: 50px; grid-template-columns: auto auto auto auto; grid-template-rows: auto; grid-gap:10px; justify-content: center">
         <!-- Modal Trigger -->
         <a class="btn-large waves-effect waves-light orange" href="#modal1" onclick="$('#modal1').modal('open');">Books</a>
-        <a class="btn-large waves-effect waves-light orange" href="#modal1" onclick="$('#modal1').modal('open');" >Videos</a>
+        <a class="btn-large waves-effect waves-light orange" href="#modal1" onclick="$('#modal1').modal('open');">Videos</a>
         <a class="btn-large waves-effect waves-light orange" href="#modal1" onclick="$('#modal1').modal('open');">Courses</a>
         <a class="btn-large waves-effect waves-light orange" href="#modal1" onclick="$('#modal1').modal('open');">Other</a>
     </div>
@@ -256,7 +232,16 @@ var config = {
   const db= firebase.firestore();
 </script>
 
+<script>
+
+var href = document.location.href;
+const listname = href.split('?')[1];
+document.getElementById('listHeader').innerHTML = listname;
+
+</script>
+
 <script src="../js/listdb.js"></script>
+
 
 </body>
 </html>
