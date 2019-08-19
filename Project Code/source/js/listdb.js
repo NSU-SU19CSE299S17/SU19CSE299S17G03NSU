@@ -2,8 +2,8 @@
 function sortlist(doc){
 
 const rname= doc.data().NameOfResource;
-const rtype=doc.data().Type;
-const rurl=doc.data().Url;
+const rtype= doc.data().Type;
+const rurl= doc.data().Url;
 var tableRef = document.getElementById('resource-list');
 
   // Insert a row in the table after the last row
@@ -26,18 +26,30 @@ var tableRef = document.getElementById('resource-list');
 
 }
 
-db.collection('Lists').get().then((snapshot) => {
- snapshot.docs.forEach(doc => {
+let listsRef = db.collection('Lists');
+let query = listsRef.where('NameOfList  ', '==', 'List1').get()
+  .then(snapshot => {
+    if (snapshot.empty) {
+      console.log('No matching documents.');
+      return;
+    }  
 
-  console.log(doc.id);
-  const id= doc.id;
-  
-  db.collection('Lists').doc(doc.id).collection('Entries').get().then((snapshot) => {
-    snapshot.docs.forEach(doc => {
-  
+    snapshot.forEach(doc => {
+      console.log(doc.id, '=>', doc.data());
+    });
+  })
+  .catch(err => {
+    console.log('Error getting documents', err);
+  });
+
+
+/*db.collectionGroup('Entries').where('Type', '==','Other' ).get().then(function(querySnapshot) {
+
+  querySnapshot.forEach(function(doc) {
+    console.log(doc.id, ' => ', doc.data());
+  });
+});
+
+
    sortlist(doc);
-
- })
-})
- })
-})
+    } */

@@ -9,8 +9,6 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-</head>
-<body>
 
 <style>
 
@@ -42,7 +40,7 @@
 
 
 </style>
-
+</head>
 
 <body>
 
@@ -91,16 +89,16 @@
         </thead>
 
         <tbody>
+<<<<<<< Updated upstream
        
+=======
+
+>>>>>>> Stashed changes
       </tbody>
       </table>
     </div>
 
-</div>
-
 <br><br><br>
-
-    </div>
 
     <br><br>
 
@@ -112,7 +110,7 @@
     <div class="grid-container" style="padding-top:50px; padding-bottom: 50px; grid-template-columns: auto auto auto auto; grid-template-rows: auto; grid-gap:10px; justify-content: center">
         <!-- Modal Trigger -->
         <a class="btn-large waves-effect waves-light orange" href="#modal1" onclick="$('#modal1').modal('open');">Books</a>
-        <a class="btn-large waves-effect waves-light orange" href="#modal1" onclick="$('#modal1').modal('open');" >Videos</a>
+        <a class="btn-large waves-effect waves-light orange" href="#modal1" onclick="$('#modal1').modal('open');">Videos</a>
         <a class="btn-large waves-effect waves-light orange" href="#modal1" onclick="$('#modal1').modal('open');">Courses</a>
         <a class="btn-large waves-effect waves-light orange" href="#modal1" onclick="$('#modal1').modal('open');">Other</a>
     </div>
@@ -230,14 +228,16 @@ var config = {
   const db= firebase.firestore();
 </script>
 
+<script>
+
+var href = document.location.href;
+const listname = href.split('?')[1];
+document.getElementById('listHeader').innerHTML = listname;
+
+</script>
+
 <script src="../js/listdb.js"></script>
 
-<script>
-    var href = document.location.href;
-    var listname = href.split('?')[1];
-    document.getElementById('listHeader').innerHTML = listname;
-    
-</script>
 
 </body>
 </html>
