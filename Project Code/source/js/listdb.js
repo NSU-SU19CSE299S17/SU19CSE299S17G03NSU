@@ -26,23 +26,6 @@ var tableRef = document.getElementById('resource-list');
 
 }
 
-/*let listsRef = db.collection('Lists');
-let query = listsRef.where('NameOfList  ', '==', 'List1').get()
-  .then(snapshot => {
-    if (snapshot.empty) {
-      console.log('No matching documents.');
-      return;
-    }  
-
-    snapshot.forEach(doc => {
-      console.log(doc.id, '=>', doc.data());
-    });
-  })
-  .catch(err => {
-    console.log('Error getting documents', err);
-  });*/
-
-
 db.collectionGroup('Entries').where('NameOfList', '==','List1' ).where('Owner','==','User1').get().then(function(querySnapshot) {
 
   querySnapshot.forEach(function(doc) {
