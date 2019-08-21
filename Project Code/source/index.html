@@ -212,13 +212,15 @@
                         <label for="confirmpassword">Confirm your Password</label>
                     </div>
                     <div class="col s4 darken-1">
-                        <label id='confirmpass' for="confirmpassword"></label>
+                        <label id='confirmpass'></label>
                     </div>
 
                     <br>
                     <button class="btn submit waves-effect waves-light orange">Submit</button>
+                    <br><br>
+                        <span id='finishedsignup'></span>
                 </form>
-                <br><br><hr><br>
+                <br><hr><br>
 
             </div>
         </div>
@@ -329,11 +331,18 @@
             const passw = SignUpForm['password'].value;
             const pass2 = SignUpForm['confirmpassword'].value;
 
-            if (passw !== pass2) {
-                document.getElementById('confirmpass').innerHTML = "Passwords don't match!";
+            if (passw.length < 6) {
+                document.getElementById('confirmpass').innerHTML = "Passwords must be at least 6 characters long.";
+            } else if (passw !== pass2) {
+                document.getElementById('confirmpass').innerHTML = "Passwords don't match.";
             } else {
                 document.getElementById('confirmpass').innerHTML = "";
                 console.log(email, passw);
+
+                auth.createUserWithEmailAndPassword(email, passw).then(cred => {
+                    console.log(cred.user);
+                    document.getElementById('finishedsignup').innerHTML = "You have been registered and automatically logged in. Click anywhere else on the page to close this window.";
+                })
             }
         })
     </script>
