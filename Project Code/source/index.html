@@ -211,6 +211,10 @@
                         <input id="confirmpassword" type="password" class="password validate center">
                         <label for="confirmpassword">Confirm your Password</label>
                     </div>
+                    <div class="col s4 darken-1">
+                        <label id='confirmpass' for="confirmpassword"></label>
+                    </div>
+
                     <br>
                     <button class="btn submit waves-effect waves-light orange">Submit</button>
                 </form>
@@ -318,8 +322,19 @@
 
     <script>
         const SignUpForm = document.querySelector('#signup-form');
-        SignUpForm.addEventListener('Submit', (e) => {
+        SignUpForm.addEventListener('submit', (e) => {
             e.preventDefault();
+
+            const email = SignUpForm['emailaddr'].value;
+            const passw = SignUpForm['password'].value;
+            const pass2 = SignUpForm['confirmpassword'].value;
+
+            if (passw !== pass2) {
+                document.getElementById('confirmpass').innerHTML = "Passwords don't match!";
+            } else {
+                document.getElementById('confirmpass').innerHTML = "";
+                console.log(email, passw);
+            }
         })
     </script>
 
