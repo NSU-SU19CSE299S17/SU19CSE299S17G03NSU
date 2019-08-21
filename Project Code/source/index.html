@@ -198,20 +198,22 @@
             <h4 class="center">Register an Account</h4>
             <br><br>
             <div class="form center" style="width: 90%; margin: auto">
-                <div class="input-field col s4 darken-1">
-                    <input id="emailaddr" type="email" class="password validate center">
-                    <label for="emailaddr">Enter your Email Address</label>
-                </div>
-                <div class="input-field col s4 darken-1">
-                    <input id="password" type="password" class="password validate center">
-                    <label for="password">Enter your Password</label>
-                </div>
-                <div class="input-field col s4 darken-1">
-                    <input id="confirmpassword" type="password" class="password validate center">
-                    <label for="confirmpassword">Confirm your Password</label>
-                </div>
-                <br>
-                <a class="btn submit waves-effect waves-light orange">Submit</a>
+                <form id="signup-form">
+                    <div class="input-field col s4 darken-1">
+                        <input id="emailaddr" type="email" class="password validate center">
+                        <label for="emailaddr">Enter your Email Address</label>
+                    </div>
+                    <div class="input-field col s4 darken-1">
+                        <input id="password" type="password" class="password validate center">
+                        <label for="password">Enter your Password</label>
+                    </div>
+                    <div class="input-field col s4 darken-1">
+                        <input id="confirmpassword" type="password" class="password validate center">
+                        <label for="confirmpassword">Confirm your Password</label>
+                    </div>
+                    <br>
+                    <button class="btn submit waves-effect waves-light orange">Submit</button>
+                </form>
                 <br><br><hr><br>
 
             </div>
@@ -222,17 +224,19 @@
         <div class="modal-content">
             <h4 class="center">Login</h4>
             <br><br>
-            <div class="form center" style="width: 80%; margin: auto">
-                <div class="input-field col s4 darken-1">
-                    <input id="loginemail" type="email" class="validate center">
-                    <label for="loginemail">Enter your Email Address</label>
-                </div>
-                <div class="input-field col s4 darken-1">
-                    <input id="loginpass" type="password" class="password validate center">
-                    <label for="loginpass">Enter your Password</label>
-                </div>
-                <br>
-                <a class="btn submit waves-effect waves-light orange">Submit</a>
+            <div class="center" style="width: 80%; margin: auto">
+                <form id="signin-form">
+                    <div class="input-field col s4 darken-1">
+                        <input id="loginemail" type="email" class="validate center">
+                        <label for="loginemail">Enter your Email Address</label>
+                    </div>
+                    <div class="input-field col s4 darken-1">
+                        <input id="loginpass" type="password" class="password validate center">
+                        <label for="loginpass">Enter your Password</label>
+                    </div>
+                    <br>
+                    <a class="btn submit waves-effect waves-light orange">Submit</a>
+                </form>
                 <br><br><hr><br>
             </div>
         </div>
@@ -275,18 +279,49 @@
 </footer>
 
 
-<!--  Scripts-->
-<script src="https://apis.google.com/js/platform.js" async defer></script>
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="js/materialize.js"></script>
-<script src="js/init.js"></script>
-<script src="js/index.js"></script>
+    <!--  Scripts-->
+    <!-- Firebase App (the core Firebase SDK)-->
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
 
-<script>
-    $(document).ready(function(){
-        $('.modal').modal();
-    });
-</script>
+    <!--Firebase products-->
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-firestore.js"></script>
+
+
+    <!-- Initialize Cloud Firestore through Firebase-->
+    <script>
+        var config = {
+            apiKey: "AIzaSyBiIbzfYGJKAF31_8uOWkNL96L-_RrLgUs",
+            authDomain: "trism-def99.firebaseapp.com",
+            databaseURL: "https://trism-def99.firebaseio.com",
+            projectId: "trism-def99",
+            storageBucket: "trism-def99.appspot.com",
+            messagingSenderId: "1092302806899"
+        };
+        firebase.initializeApp(config);
+
+        const auth = firebase.auth()
+    </script>
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/index.js"></script>
+
+
+    <script>
+        $(document).ready(function(){
+            $('.modal').modal();
+        });
+    </script>
+
+    <script>
+        const SignUpForm = document.querySelector('#signup-form');
+        SignUpForm.addEventListener('Submit', (e) => {
+            e.preventDefault();
+        })
+    </script>
 
 </body>
 </html>

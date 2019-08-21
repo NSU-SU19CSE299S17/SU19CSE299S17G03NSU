@@ -10,36 +10,35 @@
     <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
-<style>
+    <style>
 
-    body {
-        background-image: linear-gradient(#de6262, #ffb88c);
-    }
+        body {
+            background-image: linear-gradient(#de6262, #ffb88c);
+        }
 
-    .container{
-        padding-left:50px;
-        padding-right: 50px;
-    }
+        .container {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
 
-    .grid-container{
-        display: grid;
-        grid-row-gap: 50px;
-       scroll-behavior:smooth;
+        .grid-container {
+            display: grid;
+            grid-row-gap: 50px;
+            scroll-behavior: smooth;
 
-    }
+        }
 
-    .grid-item{
-        padding: 20px;
-    }
-
-
-    .dropdown-content li > a, .dropdown-content li > span {
-    color: #fb8c00
-}
+        .grid-item {
+            padding: 20px;
+        }
 
 
+        .dropdown-content li > a, .dropdown-content li > span {
+            color: #fb8c00
+        }
 
-</style>
+
+    </style>
 </head>
 
 <nav class="deep-orange lighten-1" role="navigation">
@@ -67,8 +66,8 @@
             <h5 class="header col s12 light">A Catalogue of Educational Materials from the Internet</h5>
         </div>
         <div class="row center">
-                <h3 class="header center black-text" id=listHeader></h3>
-            </div>
+            <h3 class="header center black-text" id=listHeader></h3>
+        </div>
     </div>
 </div>
 
@@ -77,36 +76,40 @@
 <div class="container" style="padding-top:65px; padding-bottom: 100px; background: white">
     <table id="resource-list" class="striped">
         <thead>
-          <tr>
-              <th>Name</th>
-              <th>Url</th>
-              <th>Type</th>
-              <th>Review</th>
-              <th>Tags</th>
-          </tr>
+        <tr>
+            <th>Name</th>
+            <th>Url</th>
+            <th>Type</th>
+            <th>Review</th>
+            <th>Tags</th>
+        </tr>
         </thead>
 
         <tbody>
         </tbody>
-      </table>
-    </div>
+    </table>
+</div>
 
 <br><br><br>
 
-    <br><br>
+<br><br>
 
 
-<div class="container" style= "background: white">
+<div class="container" style="background: white">
     <br><br>
     <h4 style="text-align:center">Add</h4>
-    <div class="grid-container" style="padding-top:50px; padding-bottom: 50px; grid-template-columns: auto auto auto auto; grid-template-rows: auto; grid-gap:10px; justify-content: center">
+    <div class="grid-container"
+         style="padding-top:50px; padding-bottom: 50px; grid-template-columns: auto auto auto auto; grid-template-rows: auto; grid-gap:10px; justify-content: center">
         <!-- Modal Trigger -->
-        <a class="btn-large waves-effect waves-light orange" href="#modal1" onclick="$('#modal1').modal('open');">Books</a>
-        <a class="btn-large waves-effect waves-light orange" href="#modal1" onclick="$('#modal1').modal('open');">Videos</a>
+        <a class="btn-large waves-effect waves-light orange" href="#modal1"
+           onclick="$('#modal1').modal('open');">Books</a>
+        <a class="btn-large waves-effect waves-light orange" href="#modal1"
+           onclick="$('#modal1').modal('open');">Videos</a>
         <a class="btn-large waves-effect waves-light orange" href="#modal1" onclick="$('#modal1').modal('open');">Courses</a>
-        <a class="btn-large waves-effect waves-light orange" href="#modal1" onclick="$('#modal1').modal('open');">Other</a>
+        <a class="btn-large waves-effect waves-light orange" href="#modal1"
+           onclick="$('#modal1').modal('open');">Other</a>
     </div>
-    </div>
+</div>
 
 <br><br><br>
 
@@ -116,33 +119,33 @@
         <form id="add-new-item">
             <table>
                 <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Url</th>
-                        <th>Type</th>
-                        <th>Review</th>
-                        <th>Tags</th>
-                    </tr>
+                <tr>
+                    <th>Name</th>
+                    <th>Url</th>
+                    <th>Type</th>
+                    <th>Review</th>
+                    <th>Tags</th>
+                </tr>
                 </thead>
 
                 <tbody>
 
-                    <tr>
+                <tr>
 
-                        <td><input type="text" name="Rname"></td>
-                        <td><input type="url" id='urllink' name="Rlink"></td>
-                        <td>
-                                <select class="input-field" name="Rtype">
-                                    <option value="" disabled selected>Type of Material</option>
-                                    <option value="1">Book</option>
-                                    <option value="2">Video</option>
-                                    <option value="3">Online Course</option>
-                                    <option value="4">Other</option>
-                                </select>
-                        </td>
-                        <td><input type="text" name="Review"></td>
-                        <td><input type="text" name="Tags"></td>
-                    </tr>
+                    <td><input type="text" name="Rname"></td>
+                    <td><input type="url" id='urllink' name="Rlink"></td>
+                    <td>
+                        <select class="input-field" name="Rtype">
+                            <option value="" disabled selected>Type of Material</option>
+                            <option value="1">Book</option>
+                            <option value="2">Video</option>
+                            <option value="3">Online Course</option>
+                            <option value="4">Other</option>
+                        </select>
+                    </td>
+                    <td><input type="text" name="Review"></td>
+                    <td><input type="text" name="Tags"></td>
+                </tr>
                 </tbody>
             </table>
             <br>
@@ -156,42 +159,42 @@
 
 
 <footer class="page-footer orange">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Company Bio</h5>
+                <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's
+                    our full time job. Any amount would help support and continue development on this project and is
+                    greatly appreciated.</p>
+
+
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Settings</h5>
+                <ul>
+                    <li><a class="white-text" href="#!">Link 1</a></li>
+                    <li><a class="white-text" href="#!">Link 2</a></li>
+                    <li><a class="white-text" href="#!">Link 3</a></li>
+                    <li><a class="white-text" href="#!">Link 4</a></li>
+                </ul>
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Connect</h5>
+                <ul>
+                    <li><a class="white-text" href="#!">Link 1</a></li>
+                    <li><a class="white-text" href="#!">Link 2</a></li>
+                    <li><a class="white-text" href="#!">Link 3</a></li>
+                    <li><a class="white-text" href="#!">Link 4</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
         <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Company Bio</h5>
-                    <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
-                </div>
-                <div class="col l3 s12">
-                    <h5 class="white-text">Settings</h5>
-                    <ul>
-                        <li><a class="white-text" href="#!">Link 1</a></li>
-                        <li><a class="white-text" href="#!">Link 2</a></li>
-                        <li><a class="white-text" href="#!">Link 3</a></li>
-                        <li><a class="white-text" href="#!">Link 4</a></li>
-                    </ul>
-                </div>
-                <div class="col l3 s12">
-                    <h5 class="white-text">Connect</h5>
-                    <ul>
-                        <li><a class="white-text" href="#!">Link 1</a></li>
-                        <li><a class="white-text" href="#!">Link 2</a></li>
-                        <li><a class="white-text" href="#!">Link 3</a></li>
-                        <li><a class="white-text" href="#!">Link 4</a></li>
-                    </ul>
-                </div>
-            </div>
+            Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
         </div>
-        <div class="footer-copyright">
-            <div class="container">
-                Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-            </div>
-        </div>
-    </footer>
-
-
+    </div>
+</footer>
 
 
 <!--  Scripts-->
@@ -201,13 +204,13 @@
 <script src="../js/mylist.js"></script>
 
 <script>
-$('.dropdown-trigger').dropdown();
+    $('.dropdown-trigger').dropdown();
 
-$('#modal1').modal();
+    $('#modal1').modal();
 
-$(document).ready(function(){
-    $('select').formSelect();
-});
+    $(document).ready(function () {
+        $('select').formSelect();
+    });
 </script>
 
 <!-- Firebase App (the core Firebase SDK)-->
@@ -220,24 +223,24 @@ $(document).ready(function(){
 
 <!-- Initialize Cloud Firestore through Firebase-->
 <script>
-var config = {
-  apiKey: "AIzaSyBiIbzfYGJKAF31_8uOWkNL96L-_RrLgUs",
-  authDomain: "trism-def99.firebaseapp.com",
-  databaseURL: "https://trism-def99.firebaseio.com",
-  projectId: "trism-def99",
-  storageBucket: "trism-def99.appspot.com",
-  messagingSenderId: "1092302806899"
-  };
-  firebase.initializeApp(config);
+    var config = {
+        apiKey: "AIzaSyBiIbzfYGJKAF31_8uOWkNL96L-_RrLgUs",
+        authDomain: "trism-def99.firebaseapp.com",
+        databaseURL: "https://trism-def99.firebaseio.com",
+        projectId: "trism-def99",
+        storageBucket: "trism-def99.appspot.com",
+        messagingSenderId: "1092302806899"
+    };
+    firebase.initializeApp(config);
 
-  const db= firebase.firestore();
+    const db = firebase.firestore();
 </script>
 
 <script>
 
-var href = document.location.href;
-const listname = href.split('?')[1];
-document.getElementById('listHeader').innerHTML = listname;
+    var href = document.location.href;
+    const listname = href.split('?')[1];
+    document.getElementById('listHeader').innerHTML = listname;
 
 </script>
 
@@ -246,7 +249,7 @@ document.getElementById('listHeader').innerHTML = listname;
 <script>
 
     //let url = 'https://www.coursera.org/learn/algorithms-part1';
-    
+
     function getURL() {
         let link = document.getElementById('urllink').valueOf();
         console.log(link);
@@ -271,7 +274,7 @@ document.getElementById('listHeader').innerHTML = listname;
             if (url.search('coursera')) {
 
                 var pos = title.indexOf("Coursera");
-                var trimmed_title = title.slice(0, pos+8);
+                var trimmed_title = title.slice(0, pos + 8);
                 console.log(trimmed_title);
                 document.write(trimmed_title);
 
@@ -285,8 +288,6 @@ document.getElementById('listHeader').innerHTML = listname;
 
         });
     }
-
-
 
 
 </script>
