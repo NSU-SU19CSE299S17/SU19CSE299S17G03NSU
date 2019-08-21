@@ -15,59 +15,52 @@
 
 </head>
 
+<!--<style>
 
+    .modal{
+        position: fixed;
+        z-index:1;
+        left:0;
+        top:0;
+        height:100%;
+        width:30%;
+        overflow:auto;
+        background-color:white;
+    }
+
+    .modal-content{
+        background-color: white;
+        margin:20% auto;
+        padding: 20px;
+        width:90%;
+    }
+
+    .closeBtn{
+        color: #ccc;
+        float: left;
+        font-size: 30px;
+        position:absolute;
+        top:3px;
+        left:17px;
+    }
+
+    .closeBtn:hover,.closeBtn:focus{
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+</style>-->
 
 <body>
-
-<style>
-
-.modal{
-
-position: fixed;
-z-index:1;
-left:0;
-top:0;
-height:100%;
-width:30%;
-overflow:auto;
-background-color:white;
-
-}
-
-.modal-content{
-
-    background-color: white;
-    margin:20% auto;
-    padding: 20px;
-    width:90%;
-}
-
-.closeBtn{
-
-    color: #ccc;
-    float: left;
-    font-size: 30px;
-    position:absolute;
-    top:3px;
-    left:17px;
-}
-
-.closeBtn:hover,.closeBtn:focus{
-
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-</style>
 
 
     <nav class="deep-orange lighten-1" role="navigation">
         <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">Logo</a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="pages/profile.html">Profile</a></li>
-                <li><a class="link" id="regBtn">Reg</a></li>
-                <li><a class="link" id="loginBtn">Log In</a></li>
+                <li><a class="modal-trigger" id="regBtn" href="#register-form">Register</a></li>
+                <li><a class="modal-trigger" id="loginBtn" href="#login-form">Log In</a></li>
             </ul>
 
             <ul id="nav-mobile" class="sidenav">
@@ -193,24 +186,21 @@ background-color:white;
 
                         </div>
                     </div>
+                </div>
+            </div>
         </div>
         <br><br>
     </div>
 
 
     <div id="register-form" class="modal" style="width: 30%">
-        <span class="closeBtn"> &times; </span>
         <div class="modal-content">
             <h4 class="center">Register an Account</h4>
             <br><br>
-            <div class="center" style="width: 90%; margin: auto">
+            <div class="form center" style="width: 90%; margin: auto">
                 <div class="input-field col s4 darken-1">
                     <input id="emailaddr" type="email" class="password validate center">
                     <label for="emailaddr">Enter your Email Address</label>
-                </div>
-                <div class="input-field col s4 darken-1">
-                    <input id="username" type="text" class="validate center">
-                    <label class="active" for="username">Enter your Username</label>
                 </div>
                 <div class="input-field col s4 darken-1">
                     <input id="password" type="password" class="password validate center">
@@ -221,7 +211,7 @@ background-color:white;
                     <label for="confirmpassword">Confirm your Password</label>
                 </div>
                 <br>
-                <a class="btn waves-effect waves-light orange">Submit</a>
+                <a class="btn submit waves-effect waves-light orange">Submit</a>
                 <br><br><hr><br>
 
             </div>
@@ -229,11 +219,10 @@ background-color:white;
     </div>
 
     <div id="login-form" class="modal" style="width: 30%">
-    <span class="closeBtn"> &times; </span>
         <div class="modal-content">
             <h4 class="center">Login</h4>
             <br><br>
-            <div class="center" style="width: 80%; margin: auto">
+            <div class="form center" style="width: 80%; margin: auto">
                 <div class="input-field col s4 darken-1">
                     <input id="loginemail" type="email" class="validate center">
                     <label for="loginemail">Enter your Email Address</label>
@@ -291,11 +280,13 @@ background-color:white;
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="js/materialize.js"></script>
 <script src="js/init.js"></script>
-<script src="../js/index.js"></script>
+<script src="js/index.js"></script>
 
-
-    </div>
-</div>
+<script>
+    $(document).ready(function(){
+        $('.modal').modal();
+    });
+</script>
 
 </body>
 </html>
