@@ -9,8 +9,6 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-</head>
-<body>
 
 <style>
 
@@ -42,7 +40,7 @@
 
 
 </style>
-
+</head>
 
 <nav class="deep-orange lighten-1" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="../index.html" class="brand-logo">Logo</a>
@@ -69,7 +67,7 @@
             <h5 class="header col s12 light">A Catalogue of Educational Materials from the Internet</h5>
         </div>
         <div class="row center">
-                <h3 class="header center black-text" >My Lists</h3>
+                <h3 class="header center black-text" id=listHeader></h3>
             </div>
     </div>
 </div>
@@ -88,30 +86,12 @@
           </tr>
         </thead>
 
-        <tbody id="resource-list-body">
-        <tr>
-            <td id="resource-name">
-            </td>
-
-            <td>
-            </td>
-
-            <td id="resource-type">
-            </td>
-
-            <td>
-            </td>
-
-            <td>
-            </td>
-        </tr>
-
+        <tbody>
+        </tbody>
       </table>
-</div>
-
+    </div>
 
 <br><br><br>
-
 
     <br><br>
 
@@ -253,6 +233,14 @@ var config = {
   const db= firebase.firestore();
 </script>
 
+<script>
+
+var href = document.location.href;
+const listname = href.split('?')[1];
+document.getElementById('listHeader').innerHTML = listname;
+
+</script>
+
 <script src="../js/listdb.js"></script>
 
 <script>
@@ -302,6 +290,7 @@ var config = {
 
 
 </script>
+
 
 </body>
 

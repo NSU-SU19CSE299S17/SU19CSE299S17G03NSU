@@ -19,13 +19,55 @@
 
 <body>
 
+<style>
+
+.modal{
+
+position: fixed;
+z-index:1;
+left:0;
+top:0;
+height:100%;
+width:30%;
+overflow:auto;
+background-color:white;
+
+}
+
+.modal-content{
+
+    background-color: white;
+    margin:20% auto;
+    padding: 20px;
+    width:90%;
+}
+
+.closeBtn{
+
+    color: #ccc;
+    float: left;
+    font-size: 30px;
+    position:absolute;
+    top:3px;
+    left:17px;
+}
+
+.closeBtn:hover,.closeBtn:focus{
+
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+</style>
+
 
     <nav class="deep-orange lighten-1" role="navigation">
         <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">Logo</a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="pages/profile.html">Profile</a></li>
-                <li><a class="modal-trigger" href="#register-form">Reg</a></li>
-                <li><a class="modal-trigger" href="#login-form">Log In</a></li>
+                <li><a class="link" id="regBtn">Reg</a></li>
+                <li><a class="link" id="loginBtn">Log In</a></li>
             </ul>
 
             <ul id="nav-mobile" class="sidenav">
@@ -157,10 +199,11 @@
 
 
     <div id="register-form" class="modal" style="width: 30%">
-        <div class="modal-content center">
-            <h4 class="center" style="font-family: serif">Register an Account</h4>
+        <span class="closeBtn"> &times; </span>
+        <div class="modal-content">
+            <h4 class="center">Register an Account</h4>
             <br><br>
-            <div class="center" style="width: 80%; margin: auto">
+            <div class="center" style="width: 90%; margin: auto">
                 <div class="input-field col s4 darken-1">
                     <input id="emailaddr" type="email" class="password validate center">
                     <label for="emailaddr">Enter your Email Address</label>
@@ -186,8 +229,9 @@
     </div>
 
     <div id="login-form" class="modal" style="width: 30%">
-        <div class="modal-content center">
-            <h4 class="center" style="font-family: serif">Login</h4>
+    <span class="closeBtn"> &times; </span>
+        <div class="modal-content">
+            <h4 class="center">Login</h4>
             <br><br>
             <div class="center" style="width: 80%; margin: auto">
                 <div class="input-field col s4 darken-1">
@@ -247,14 +291,7 @@
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="js/materialize.js"></script>
 <script src="js/init.js"></script>
-<script src="js/index.js"></script>
-
-
-<script>
-    $(document).ready(function(){
-        $('.modal').modal();
-    });
-</script>
+<script src="../js/index.js"></script>
 
 
     </div>

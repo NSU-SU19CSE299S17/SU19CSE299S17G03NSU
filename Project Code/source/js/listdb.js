@@ -1,8 +1,9 @@
 function sortlist(doc){
 
 const rname= doc.data().NameOfResource;
-const rtype=doc.data().Type;
-const rurl=doc.data().Url;
+const rtype= doc.data().Type;
+const rurl= doc.data().Url;
+
 
 var tableRef = document.getElementById('resource-list');
 
@@ -25,6 +26,7 @@ var tableRef = document.getElementById('resource-list');
     newCell2.appendChild(newText2);
 
 }
+
 
 db.collection('Lists').get().then((snapshot) => {
     console.log(snapshot.docs);
@@ -54,4 +56,13 @@ addItemRef.addEventListener('submit', (event) => {
             URL: addItemRef.Rlink.val()
         })
     });
+
+  
+db.collectionGroup('Entries').where('NameOfList', '==','List1' ).where('Owner','==','User1').get().then(function(querySnapshot) {
+
+  querySnapshot.forEach(function(doc) {
+    console.log(doc.id, ' => ', doc.data());
+    sortlist(doc);
+  });
+
 });
