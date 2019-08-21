@@ -60,13 +60,16 @@
             <ul class="right hide-on-med-and-down">
                 <li><a href="pages/profile.html">Profile</a></li>
                 <li><a class="modal-trigger" id="regBtn" href="#register-form">Register</a></li>
-                <li><a class="modal-trigger" id="loginBtn" href="#login-form">Log In</a></li>
+                <li><a class="modal-trigger" id="loginBtn" href="#login-form">Login</a></li>
+                <li><a class="" id="logoutbtn" href="#">Logout</a></li>
+
             </ul>
 
             <ul id="nav-mobile" class="sidenav">
                 <li><a href="pages/profile.html">Profile</a></li>
                 <li><a href="#register-form">Register</a></li>
                 <li><a href="#login-form">Log In</a></li>
+
             </ul>
             <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         </div>
@@ -324,6 +327,8 @@
 
     <script>
         const SignUpForm = document.querySelector('#signup-form');
+        const LogOut = document.querySelector('#logoutbtn');
+
         SignUpForm.addEventListener('submit', (e) => {
             e.preventDefault();
 
@@ -344,6 +349,13 @@
                     document.getElementById('finishedsignup').innerHTML = "You have been registered and automatically logged in. Click anywhere else on the page to close this window.";
                 })
             }
+        })
+
+        LogOut.addEventListener('click', (e) => {
+            e.preventDefault();
+            auth.signOut().then(() => {
+                console.log("User has logged out.");
+            })
         })
     </script>
 
