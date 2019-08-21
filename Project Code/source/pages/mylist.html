@@ -42,8 +42,6 @@
 </style>
 </head>
 
-<body>
-
 <nav class="deep-orange lighten-1" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="../index.html" class="brand-logo">Logo</a>
         <ul class="right hide-on-med-and-down">
@@ -87,6 +85,7 @@
               <th>Tags</th>
           </tr>
         </thead>
+
         <tbody>
         </tbody>
       </table>
@@ -96,7 +95,6 @@
 
     <br><br>
 
-</div>
 
 <div class="container" style= "background: white">
     <br><br>
@@ -114,44 +112,46 @@
 
 <!-- Modal Structure -->
 <div id="modal1" class="modal">
-  <div class="modal-content">
-    <table>
-        <thead>
-          <tr>
-              <th>Name</th>
-              <th>Url</th>
-              <th>Type</th>
-              <th>Review</th>
-              <th>Tags</th>
-          </tr>
-        </thead>
+    <div class="modal-content">
+        <form id="add-new-item">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Url</th>
+                        <th>Type</th>
+                        <th>Review</th>
+                        <th>Tags</th>
+                    </tr>
+                </thead>
 
-        <tbody>
-          <tr>
-            <td><input type="text" name="Rname"></td>
-            <td><input type="url" name="Rlink"></td>
-            <td>
-                <div class="input-field">
-                    <select>
-                        <option value="" disabled selected>Type of Material</option>
-                        <option value="1">Book</option>
-                        <option value="2">Video</option>
-                        <option value="3">Online Course</option>
-                        <option value="4">Other</option>
-                    </select>
-                </div>
-            </td>
-            <td><input type="text" name="Review"></td>
-            <td><input type="text" name="Tags"></td>
-          </tr>
-        </tbody>
-      </table>
+                <tbody>
 
-  </div>
-  <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn orange">Update Info from URL</a>
-      <a href="#!" class="modal-close waves-effect waves-green btn orange">Add Item</a>
-  </div>
+                    <tr>
+
+                        <td><input type="text" name="Rname"></td>
+                        <td><input type="url" id='urllink' name="Rlink"></td>
+                        <td>
+                                <select class="input-field" name="Rtype">
+                                    <option value="" disabled selected>Type of Material</option>
+                                    <option value="1">Book</option>
+                                    <option value="2">Video</option>
+                                    <option value="3">Online Course</option>
+                                    <option value="4">Other</option>
+                                </select>
+                        </td>
+                        <td><input type="text" name="Review"></td>
+                        <td><input type="text" name="Tags"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <br>
+            <button class="waves-effect waves-green btn orange" onclick="placeName()">Update Info from URL</button>
+            <button class="waves-effect waves-green btn orange">Add Item</button>
+        </form>
+
+    </div>
 </div>
 
 
@@ -199,10 +199,11 @@
 <script src="../js/materialize.js"></script>
 <script src="../js/init.js"></script>
 <script src="../js/mylist.js"></script>
-<script src="../js/webscraper.js"></script>
 
 <script>
 $('.dropdown-trigger').dropdown();
+
+$('#modal1').modal();
 
 $(document).ready(function(){
     $('select').formSelect();
@@ -242,6 +243,55 @@ document.getElementById('listHeader').innerHTML = listname;
 
 <script src="../js/listdb.js"></script>
 
+<script>
+
+    //let url = 'https://www.coursera.org/learn/algorithms-part1';
+    
+    function getURL() {
+        let link = document.getElementById('urllink').valueOf();
+        console.log(link);
+        return link;
+    }
+
+    function placeName() {
+
+        let url = getURL();
+
+        request({
+            method: 'GET',
+            url: url
+
+        }, (err, res, html) => {
+
+            if (err) return console.error(err);
+
+            let $ = cheerio.load(html);
+            let title = $('title').text();
+
+            if (url.search('coursera')) {
+
+                var pos = title.indexOf("Coursera");
+                var trimmed_title = title.slice(0, pos+8);
+                console.log(trimmed_title);
+                document.write(trimmed_title);
+
+            } else {
+
+                console.log(title);
+
+                document.write(title);
+
+            }
+
+        });
+    }
+
+
+
+
+</script>
+
 
 </body>
+
 </html>

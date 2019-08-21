@@ -1,3 +1,7 @@
+/* $(document).ready(function() {
+    $('#modal1').modal();
+});
+
 const request = require('request');
 const cheerio = require('cheerio');
 
@@ -19,19 +23,14 @@ request({
         var pos = title.indexOf("Coursera");
         var trimmed_title = title.slice(0, pos+8);
         console.log(trimmed_title);
+        document.write(trimmed_title);
 
     } else {
 
         console.log(title);
+
+        document.write(title);
+
     }
 
-});
-
-
-/*$(document).ready(function() {
-
-    $('#modal1').modal();
-
-
-
-});*/
+}); */
