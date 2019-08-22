@@ -28,6 +28,7 @@ addItemRef.addEventListener('submit', (event) => {
             URL: addItemRef.Rlink.val()
         })
     });
+  });
 
   
 db.collectionGroup('Entries').where('NameOfList', '==','List1' ).where('Owner','==','User1').get().then(function(querySnapshot) {
@@ -64,4 +65,4 @@ function sortlist(doc){
     newCell1.appendChild(newText1);
     newCell2.appendChild(newText2);
   
-  }
+}
