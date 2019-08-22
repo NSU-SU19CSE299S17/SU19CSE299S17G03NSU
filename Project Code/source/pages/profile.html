@@ -65,19 +65,17 @@
     </ul>
 
     <div id="personal-info" class="col s12">
+        <br><br>
         <div class="row valign-wrapper">
             <div class="col s2">
                 <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="circle responsive-img"> notice the "circle" class
             </div>
             <div class="col s10">
-                <span class="black-text">
-                    <h3>Username</h3>
+                <span class="black-text" id="display-email">
+                    <h2>Username</h2>
                 </span>
             </div>
         </div>
-        <span class="black-text">
-            <h4>Email Address</h4>
-        </span>
     </div>
     <div id="my-lists" class="col s12" style="padding: 57px">
         <h4>My Lists</h4>
@@ -148,9 +146,51 @@
 <script src="../js/materialize.js"></script>
 <script src="../js/init.js"></script>
 
+<!-- Firebase App (the core Firebase SDK)-->
+<script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
+
+<!--Firebase products-->
+<script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-firestore.js"></script>
+
+
+<!-- Initialize Cloud Firestore through Firebase-->
+<script>
+    var config = {
+        apiKey: "AIzaSyBiIbzfYGJKAF31_8uOWkNL96L-_RrLgUs",
+        authDomain: "trism-def99.firebaseapp.com",
+        databaseURL: "https://trism-def99.firebaseio.com",
+        projectId: "trism-def99",
+        storageBucket: "trism-def99.appspot.com",
+        messagingSenderId: "1092302806899"
+    };
+    firebase.initializeApp(config);
+
+    const auth = firebase.auth()
+</script>
+
 <script>
     $(document).ready(function(){
         $('.tabs').tabs();
+    });
+</script>
+
+<script>
+    firebase.auth().onAuthStateChanged(function(user) {
+        if (user) {
+
+            let email = user.email;
+            let userid = user.uid;
+
+            console.log(email);
+            console.log(userid);
+
+            document.getElementById('display-email').innerHTML = email;
+
+
+        } else {
+            console.log("No User Signed In");
+        }
     });
 </script>
 

@@ -1,6 +1,4 @@
-
-
-var regBtn= document.getElementById('regBtn');
+/*var regBtn= document.getElementById('regBtn');
 var loginBtn= document.getElementById('loginBtn');
 var closeBtnReg= document.getElementsByClassName('closeBtn')[0];
 var closeBtnLogin= document.getElementsByClassName('closeBtn')[1];
@@ -25,11 +23,11 @@ $(document).ready(function() {
     console.log("Closed Login Modal");
     document.getElementById('login-form').style.display = "none";
    }
-   
+
   });
 
 
-/*document.getElementById("about-button").addEventListener("click", scrolltoAbout)
+document.getElementById("about-button").addEventListener("click", scrolltoAbout)
 
 function scrolltoAbout() {
     document.getElementById("about-trism").scrollTo();
