@@ -371,7 +371,13 @@
 
             console.log(email, pass);
 
+            auth.signInWithEmailAndPassword(email, pass).then(cred => {
+                console.log(cred.user);
+                document.getElementById('confirmuser').innerHTML = "";
+                document.getElementById('finishedsignin').innerHTML = "You have been logged in. Click anywhere else on the page to close this window.";
                 
+                //document.getElementById('confirmuser').innerHTML = "Password doesn't match, or User doesn't exist.";
+            });
 
 
         })
