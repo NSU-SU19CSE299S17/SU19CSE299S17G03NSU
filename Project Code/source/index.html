@@ -243,8 +243,13 @@
                         <input id="loginpass" type="password" class="password validate center">
                         <label for="loginpass">Enter your Password</label>
                     </div>
+                    <div class="col s4 darken-1">
+                        <label id='confirmuser'></label>
+                    </div>
                     <br>
-                    <a class="btn submit waves-effect waves-light orange">Submit</a>
+                    <button class="btn submit waves-effect waves-light orange">Submit</button>
+                    <br><br>
+                    <span id='finishedsignin'></span>
                 </form>
                 <br><br><hr><br>
             </div>
@@ -327,6 +332,7 @@
 
     <script>
         const SignUpForm = document.querySelector('#signup-form');
+        const LogInForm = document.querySelector('#signin-form');
         const LogOut = document.querySelector('#logoutbtn');
 
         SignUpForm.addEventListener('submit', (e) => {
@@ -357,6 +363,19 @@
                 console.log("User has logged out.");
             })
         })
+
+        LogInForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const email = LogInForm['loginemail'].value;
+            const pass = LogInForm['loginpass'].value;
+
+            console.log(email, pass);
+
+                
+
+
+        })
+
     </script>
 
 </body>
