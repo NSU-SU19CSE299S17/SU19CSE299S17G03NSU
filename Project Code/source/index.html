@@ -335,6 +335,12 @@
         const LogInForm = document.querySelector('#signin-form');
         const LogOut = document.querySelector('#logoutbtn');
 
+        auth.onAuthStateChanged(user => {
+            console.log(user);
+            console.log(user.email);
+
+        });
+
         SignUpForm.addEventListener('submit', (e) => {
             e.preventDefault();
 
