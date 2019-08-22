@@ -61,7 +61,7 @@
         <li class="tab col s4"><a class="waves-effect waves-light orange white-text" href="#personal-info">My Info</a></li>
         <li class="tab col s3"><a class="waves-effect waves-light orange white-text" href="#my-lists">My Lists</a></li>
         <li class="tab col s3"><a class="waves-effect waves-light orange white-text" href="#favourites">Favourites</a></li>
-        <li class="tab col s3"><a class="waves-effect waves-light orange white-text" href="#update-info">Update Info</a></li>
+        <li class="tab col s3"><a class="waves-effect waves-light orange white-text" href="#subscriptions">Subscriptions</a></li>
     </ul>
 
     <div id="personal-info" class="col s12">
@@ -133,11 +133,21 @@
             </tbody>
         </table>
     </div>
-    <div id="update-info" class="col s12" style="padding: 57px">
-
+    <div id="subscriptions" class="col s12" style="padding: 57px">
+            <h4>Subscriptions</h4>
+        <table class="striped highlight responsive-table" id="sub-table">
+            <thead>
+            <tr>
+                <th>Subscription ID</th>
+                <th>Subscription Date</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <br><br>
+        <button class="btn-large waves-effect waves-light orange" id="subBtn" >Subscribe</button>
     </div>
-
-</div>
 
 
 
@@ -147,6 +157,32 @@
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="../js/materialize.js"></script>
 <script src="../js/init.js"></script>
+
+
+<!-- Firebase App (the core Firebase SDK)-->
+<script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
+
+<!--Firebase products-->
+<script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-firestore.js"></script>
+
+
+<!-- Initialize Cloud Firestore through Firebase-->
+<script>
+var config = {
+  apiKey: "AIzaSyBiIbzfYGJKAF31_8uOWkNL96L-_RrLgUs",
+  authDomain: "trism-def99.firebaseapp.com",
+  databaseURL: "https://trism-def99.firebaseio.com",
+  projectId: "trism-def99",
+  storageBucket: "trism-def99.appspot.com",
+  messagingSenderId: "1092302806899"
+  };
+  firebase.initializeApp(config);
+
+  const db= firebase.firestore();
+</script>
+
+<script src="../js/profile.js"></script>
 
 <script>
     $(document).ready(function(){
