@@ -177,5 +177,15 @@
     });
 </script>
 
+<script>
+    firebase.auth().onAuthStateChanged(function(user) {
+        if (user) {
+            console.log(user.email);
+        } else {
+            console.log("No User Signed In");
+        }
+    });
+</script>
+
 </body>
 </html>
