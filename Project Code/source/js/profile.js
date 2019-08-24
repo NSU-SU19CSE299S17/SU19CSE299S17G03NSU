@@ -4,31 +4,52 @@ firebase.auth().onAuthStateChanged(function(user) {
       let email = user.email;
       let userid = user.uid;
 
+
       console.log(email);
       console.log(userid);
 
       document.getElementById('display-email').innerHTML = email;
-
+      document.getElementById('Lname').innerHTML = Lname;
+  
 
       var subBtn= document.getElementById('subBtn');
       let docRef = db.collection('Subscriptions').doc();
+      var newListBtn= document.getElementById('newListBtn');
+      let listRef = db.collection('Lists').doc();
 
 
-      let data = {
+      let subData = {
           User: email,
           Time:firebase.firestore.FieldValue.serverTimestamp()
         };
 
-
       $(document).ready(function() {
           $('#subBtn').click(function() {
             console.log("Sub Pressed");
-            docRef.set(data);
+            docRef.set(subData);
 
               })
             }) 
 
-            db.collection('Subscriptions').where('User','==', email).get().then((snapshot) => {
+            $(document).ready(function() {
+              $('#newListBtn').click(function() {
+                var modalText=$('input[id=Lname]').val();
+                console.log("Adding New List");
+                console.log(modalText);
+
+                let listData = {
+                  Username: email,
+                  DateCreated:firebase.firestore.FieldValue.serverTimestamp(),
+                  ListName: modalText
+        
+                };
+        
+                listRef.set(listData);
+    
+                  })
+                }) 
+
+            db.collection('List').where('User','==', email).get().then((snapshot) => {
               snapshot.docs.forEach(doc => {
             
               const id= doc.id;

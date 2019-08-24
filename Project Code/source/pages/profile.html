@@ -163,14 +163,14 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <td><input type="text" name="Lname"></td>
+                    <td><input type="text" id="Lname"></td>
                 </tr>
                 </tbody>
             </table>
             <br>
             <br>
             <button class="waves-effect waves-green btn orange" onclick="placeName()">Update Info from URL</button>
-            <button class="waves-effect waves-green btn orange">Add New List</button>
+            <button class="waves-effect waves-green btn orange" id="newListBtn" >Add New List</button>
         </form>
 
     </div>
@@ -184,7 +184,6 @@
 
 <script>
     $('.dropdown-trigger').dropdown();
-
     $('#createList').modal();
 </script>
 
