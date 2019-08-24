@@ -102,10 +102,13 @@
             </tbody>
         </table>
         <br><br>
+
+        <!-- Modal Trigger -->
         <span class="black-text">
-            <a href="#createList" onclick="$('#createList').modal('open');" > Create New List</a>
+            <a href="#createList" onclick="$('#createList').modal('open');"> Create New List</a>
         </span>
     </div>
+
     <div id="favourites" class="col s12" style="padding: 57px">
         <h4>Favourited Lists</h4>
         <table class="striped highlight responsive-table">
@@ -131,6 +134,7 @@
             </tbody>
         </table>
     </div>
+
     <div id="subscriptions" class="col s12" style="padding: 57px">
             <h4>Subscriptions</h4>
         <table class="striped highlight responsive-table" id="sub-table">
@@ -147,8 +151,30 @@
         <button class="btn-large waves-effect waves-light orange" id="subBtn" >Subscribe</button>
     </div>
 
+<!-- Modal Structure -->
+<div id="createList" class="modal">
+    <div class="modal-content">
+        <form id="add-new-list">
+            <table>
+                <thead>
+                <tr>
+                    <th>List Name</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><input type="text" name="Lname"></td>
+                </tr>
+                </tbody>
+            </table>
+            <br>
+            <br>
+            <button class="waves-effect waves-green btn orange" onclick="placeName()">Update Info from URL</button>
+            <button class="waves-effect waves-green btn orange">Add New List</button>
+        </form>
 
-
+    </div>
+</div>
 
 
 <!--  Scripts-->
@@ -159,7 +185,7 @@
 <script>
     $('.dropdown-trigger').dropdown();
 
-    $('#modal1').modal();
+    $('#createList').modal();
 </script>
 
 <!-- Firebase App (the core Firebase SDK)-->
