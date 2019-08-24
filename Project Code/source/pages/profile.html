@@ -103,7 +103,7 @@
         </table>
         <br><br>
         <span class="black-text">
-            <a class="" href="mylist.html"> Create New List</a>
+            <a href="#createList" onclick="$('#createList').modal('open');" > Create New List</a>
         </span>
     </div>
     <div id="favourites" class="col s12" style="padding: 57px">
@@ -156,6 +156,12 @@
 <script src="../js/materialize.js"></script>
 <script src="../js/init.js"></script>
 
+<script>
+    $('.dropdown-trigger').dropdown();
+
+    $('#modal1').modal();
+</script>
+
 <!-- Firebase App (the core Firebase SDK)-->
 <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
 
@@ -187,7 +193,6 @@ var config = {
     });
 </script>
 
-<<<<<<< HEAD
 <script>
     firebase.auth().onAuthStateChanged(function(user) {
         if (user) {
@@ -207,14 +212,5 @@ var config = {
     });
 </script>
 
-=======
-<<<<<<< Updated upstream
-=======
-<script>
-    
-</script>
-
->>>>>>> Stashed changes
->>>>>>> b44db78... Feature #27: Using user's email to query for subscriptions
 </body>
 </html>
