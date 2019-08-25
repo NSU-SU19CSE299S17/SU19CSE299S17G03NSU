@@ -53,7 +53,7 @@ In order to apply changes to online-hosted version, use
 
 
 ## 4. Project Goals
-
+The goal of this project was to create a web app that contains lists of instructional materials. Since this list is hosted online, anyone can access it from any device. This would allow, for instance, teachers to make the list just once, and then share it with students whenever necessary.
 
 ## 5. Features of the Project
 
