@@ -57,14 +57,36 @@ The goal of this project was to create a web app that contains lists of instruct
 
 ## 5. Features of the Project
 
+Features that were implemented in the project include:
+
+#### Interactive Front-End Website
+The website is hosted on Google Firebase and used as a front end for the user to visit and interact with, located at [Trism](https://trism-def99.firebaseapp.com/). It is divided into four sections: the landing page, the profile page, the lists and the library. The first four sections were completed and all implemented, while the latter is currently a placebo for possible future development.
+
+#### Back-End Firestore Database
+For the needs of a flexible, high speed database suitable for working with in javascript, Firebase Firestore was used. As this database uses the same platform as our web hosting, the integration process was simplified. The database is divided into an Users table and a Lists table. The Users table is used for user authentication, registration and logging in, while the lists table contains the names of a list, the owner of the list and a nested table containing the list itself.
+
+#### Lists
+
+
+#### User Registration and Log-In
+
+
+#### User Transactions/Subscriptions
+
 
 ## 6. Features not Implemented
 
+Features that could not be implemented due to various restrictions in time, skills or technology include:
 
-## 7. Possible Future Updates
+#### Web-Scraping from user-entered URLs
 
 
-## 8. Business Plan
+#### Tagging and User Suggestions System
+
+
+#### Universal Library Containing Aggregated Info
+
+
 
 
 ## 9. Credits
