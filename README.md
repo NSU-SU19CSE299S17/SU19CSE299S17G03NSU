@@ -2,7 +2,7 @@
 
 #### Project for CSE299 - Junior Design
 #### Section 17
-#### Faculty: SAS3
+#### Faculty: SAS3 
 
 ## Group Members:
 
@@ -52,5 +52,17 @@ In order to apply changes to online-hosted version, use
 ```firebase deploy```
 
 
-## 4. Credits
+## 4. Project Goals
+
+
+## 5. Features of the Project
+
+
+## 6. Possible Future Updates
+
+
+## 7. Business Plan
+
+
+## 8. Credits
 
