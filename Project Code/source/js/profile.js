@@ -9,11 +9,14 @@ firebase.auth().onAuthStateChanged(function(user) {
       console.log(userid);
 
       document.getElementById('display-email').innerHTML = email;
-      document.getElementById('Lname').innerHTML = Lname;
+      //document.getElementById('Lname').innerHTML = Lname;
+
+      var modalText=$('input[id=Lname]').val();
   
 
       var subBtn= document.getElementById('subBtn');
       let docRef = db.collection('Subscriptions').doc();
+
       var newListBtn= document.getElementById('newListBtn');
       let listRef = db.collection('Lists').doc();
 
@@ -21,6 +24,13 @@ firebase.auth().onAuthStateChanged(function(user) {
       let subData = {
           User: email,
           Time:firebase.firestore.FieldValue.serverTimestamp()
+        };
+
+        let listData = {
+          Username: email,
+          DateCreated:firebase.firestore.FieldValue.serverTimestamp(),
+          ListName: modalText
+
         };
 
       $(document).ready(function() {
@@ -33,18 +43,13 @@ firebase.auth().onAuthStateChanged(function(user) {
 
             $(document).ready(function() {
               $('#newListBtn').click(function() {
-                var modalText=$('input[id=Lname]').val();
+
                 console.log("Adding New List");
                 console.log(modalText);
-
-                let listData = {
-                  Username: email,
-                  DateCreated:firebase.firestore.FieldValue.serverTimestamp(),
-                  ListName: modalText
-        
-                };
         
                 listRef.set(listData);
+
+                window.location.assign("mylist.html?"+modalText);
     
                   })
                 }) 
@@ -54,12 +59,12 @@ firebase.auth().onAuthStateChanged(function(user) {
             
               const id= doc.id;
               console.log(doc.id);
-              sortlist(doc);
+              sortlistSub(doc);
             
               });
             });
 
-      function sortlist(doc){
+      function sortlistSub(doc){
 
         const subid= doc.id;
         const time= doc.data().Time.toDate();

@@ -240,7 +240,8 @@
 
     var href = document.location.href;
     const listname = href.split('?')[1];
-    document.getElementById('listHeader').innerHTML = listname;
+    const trimListName= decodeURIComponent(listname);
+    document.getElementById('listHeader').innerHTML = trimListName;
 
 </script>
 
