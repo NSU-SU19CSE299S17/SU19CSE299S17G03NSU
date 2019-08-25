@@ -87,6 +87,18 @@ Features that could not be implemented due to various restrictions in time, skil
 #### Universal Library Containing Aggregated Info
 
 
+## 7. Possible Future Updates
+
+In addition to all the features not implemented that could be worked on in the future, there are several other future plans:
+* Changing Hosting Plan to a different provider or a higher tier of Firebase from the Free Tier
+* Implementing a proper payment system for users who want to donate or recieve additional 'subscriber-only' privileges.
+* A Mobile Application that would allow users to take advantage of this website's features in an optimized app (as opposed to the mobile version of a browser page) while on the go.
+
+## 8. Business Plan
+
+We expect there will be lot of traffic from students, teachers and everyone who goes on the internet for academic and learning purposes. Therefore, monetizing the website through advertisements should be straightforward. High traffic would ensure a relatively high number of views and clicks, making it an attractive prospect for those looking to sponsor the website.
+
+Additionally, this website can operate on a subscriber-only model. New users would recieve a 3-month period of free trial, following which they would have to subscribe to the website. Subscription fees can be kept low, ranging from $5-$10 annually depending on userbase demographics. If the subscriber model is too restrictive, we can switch to a freemium model where users can use the website forever but with limitations such as plenty of avertisements or a limit on the number of lists they can create.
 
 
 ## 9. Credits
