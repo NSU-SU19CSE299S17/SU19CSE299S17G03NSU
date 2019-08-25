@@ -58,11 +58,14 @@ In order to apply changes to online-hosted version, use
 ## 5. Features of the Project
 
 
-## 6. Possible Future Updates
+## 6. Features not Implemented
 
 
-## 7. Business Plan
+## 7. Possible Future Updates
 
 
-## 8. Credits
+## 8. Business Plan
+
+
+## 9. Credits
 
