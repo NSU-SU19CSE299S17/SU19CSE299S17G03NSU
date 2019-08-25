@@ -18,7 +18,7 @@ firebase.auth().onAuthStateChanged(function(user) {
       let docRef = db.collection('Subscriptions').doc();
 
       var newListBtn= document.getElementById('newListBtn');
-      let listRef = db.collection('Lists').doc();
+      let listRef = db.collection('Lists');
 
 
       let subData = {
@@ -26,13 +26,7 @@ firebase.auth().onAuthStateChanged(function(user) {
           Time:firebase.firestore.FieldValue.serverTimestamp()
         };
 
-        let listData = {
-          Username: email,
-          DateCreated:firebase.firestore.FieldValue.serverTimestamp(),
-          ListName: modalText
-
-        };
-
+      
       $(document).ready(function() {
           $('#subBtn').click(function() {
             console.log("Sub Pressed");
@@ -46,10 +40,21 @@ firebase.auth().onAuthStateChanged(function(user) {
 
                 console.log("Adding New List");
                 console.log(modalText);
-        
-                listRef.set(listData);
 
-                window.location.assign("mylist.html?"+modalText);
+                listRef.add({
+                
+                  Username: email,
+                  DateCreated:firebase.firestore.FieldValue.serverTimestamp(),
+                  ListName: modalText
+
+                })
+                .then(function(docRef) {
+                  console.log("Document written with ID: ", docRef.id);
+                  window.location.assign("mylist.html?"+modalText+"&"+docRef.id);
+                })
+                .catch(function(error) {
+                  console.error("Error adding document: ", error);
+                });
     
                   })
                 }) 

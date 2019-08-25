@@ -239,7 +239,11 @@
 <script>
 
     var href = document.location.href;
-    const listname = href.split('?')[1];
+    var queryString = href.split('?')[1];
+    queryString = queryString.split('#')[0];
+    var arr = queryString.split('&');
+    var listname= arr[0];
+    var docId=arr[1];
     const trimListName= decodeURIComponent(listname);
     document.getElementById('listHeader').innerHTML = trimListName;
 

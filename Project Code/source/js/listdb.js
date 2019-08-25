@@ -8,10 +8,16 @@ firebase.auth().onAuthStateChanged(function(user) {
   
         console.log(email);
         console.log(userid);
-        
+
 
         var href = document.location.href;
-        const listname = href.split('?')[1];
+        var queryString = href.split('?')[1];
+        queryString = queryString.split('#')[0];
+        var arr = queryString.split('&');
+        var listname= arr[0];
+        var docId=arr[1];
+        console.log(docId);
+        console.log(listname);
 
         const trimListName= decodeURIComponent(listname);
 
@@ -37,7 +43,7 @@ addItemRef.addEventListener('submit', (event) => {
 
     db.collection('Lists').get().then((snapshot) => {
 
-        db.collection('Lists').doc(doc.id).collection('Entries').add({
+        db.collection('Lists').doc(docId).collection('Entries').add({
             NameOfResource: addItemRef.Rname.val(),
             Type: addItemRef.Rtype.val(),
             URL: addItemRef.Rlink.val(),
