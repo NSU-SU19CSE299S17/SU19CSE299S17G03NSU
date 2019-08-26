@@ -69,28 +69,16 @@
             </div>
         </div>
     </div>
+
     <div id="my-lists" class="col s12" style="padding: 57px">
         <h4>My Lists</h4>
-        <table class="striped highlight responsive-table">
+        <table class="striped highlight responsive-table" id="myList-table">
             <thead>
             <tr>
-                <th>Created By</th>
                 <th>List Name</th>
             </tr>
             </thead>
             <tbody>
-            <tr>
-                <td>Username</td>
-                <td><a href='mylist.html?List1' id='List1'>List1</a></td>
-            </tr>
-            <tr>
-                <td>Username</td>
-                <td><a href='mylist.html?List2' id='List2'>List2</a></td>
-            </tr>
-            <tr>
-                <td>Username</td>
-                <td><a href='mylist.html?List3'>List3</a></td>
-            </tr>
             </tbody>
         </table>
         <br><br>
@@ -155,14 +143,13 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <td><input type="text" id="Lname"></td>
+                    <td><input type="text" name="listname" id="Lname"></td>
                 </tr>
                 </tbody>
             </table>
             <br>
             <br>
-            <button class="waves-effect waves-green btn orange" onclick="placeName()">Update Info from URL</button>
-            <button class="waves-effect waves-green btn orange" id="newListBtn" >Add New List</button>
+            <button class="waves-effect waves-green btn orange" id="newListBtn">Add New List</button>
         </form>
 
     </div>
