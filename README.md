@@ -18,7 +18,11 @@
 1. [Project Description](https://github.com/Namerlight/SU19CSE299S17G03NSU/#1-Project)
 2. [Packages and Libraries](https://github.com/Namerlight/SU19CSE299S17G03NSU/#2-Packages-and-Libraries-Used)
 3. [Setup Instructions](https://github.com/Namerlight/SU19CSE299S17G03NSU/#3-Setup-Instructions)
-4. [Credits](https://github.com/Namerlight/SU19CSE299S17G03NSU/#4-Credits)
+4. [Project Goals](https://github.com/Namerlight/SU19CSE299S17G03NSU/#4-Project-Goals)
+5. [Features of the Project](https://github.com/Namerlight/SU19CSE299S17G03NSU/#5-Features-of-the-Project)
+6. [Features not Implemented](https://github.com/Namerlight/SU19CSE299S17G03NSU/#6-Features-not-Implemented)
+7. [Possible Future Updates](https://github.com/Namerlight/SU19CSE299S17G03NSU/#7-Possible-Future-Updates)
+8. [Possible Future Updates](https://github.com/Namerlight/SU19CSE299S17G03NSU/#8-Business-Plan)
 
 
 ## 1. Project 
