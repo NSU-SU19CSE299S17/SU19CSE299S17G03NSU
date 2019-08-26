@@ -56,7 +56,7 @@
 
 
     <nav class="deep-orange lighten-1" role="navigation">
-        <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">Logo</a>
+        <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">Home</a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="pages/profile.html">Profile</a></li>
                 <li><a class="modal-trigger" id="regBtn" href="#register-form">Register</a></li>
@@ -103,9 +103,8 @@
                 <div class="col s12 m4">
                     <div class="icon-block">
                         <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-                        <h5 class="center">Speeds up development</h5>
+                        <h5 class="center">Visit Your Profile</h5>
 
-                        <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
                     </div>
                     <div class="row center">
                         <a href="pages/profile.html" id="profile-button" class="btn-large waves-effect waves-light orange">Your Profile</a>
@@ -115,9 +114,8 @@
                 <div class="col s12 m4">
                     <div class="icon-block">
                         <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-                        <h5 class="center">User Experience Focused</h5>
+                        <h5 class="center">Create a New List</h5>
 
-                        <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
                     </div>
                     <div class="row center">
                         <a href="pages/mylist.html" id="mylist-button" class="btn-large waves-effect waves-light orange">Create a New List</a>
@@ -127,9 +125,8 @@
                 <div class="col s12 m4">
                     <div class="icon-block">
                         <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-                        <h5 class="center">Easy to work with</h5>
+                        <h5 class="center">Visit the Library</h5>
 
-                        <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
                     </div>
                     <div class="row center">
                         <a href="pages/library.html" id="library-button" class="btn-large waves-effect waves-light orange">View the Library</a>
@@ -148,20 +145,24 @@
 
             <!--   Icon Section   -->
             <div class="row">
+                <div class="col s12 m3"></div>
                 <div class="col s12 m6">
                     <div class="icon-block">
                         <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
                         <h5 class="center">About Trism</h5>
 
-                        <p class="light">We did most of the heavy lifting for you to provide a default stylings that
-                            incorporate our custom components. Additionally, we refined animations and transitions to
-                            provide a smoother experience for developers. We did most of the heavy lifting for you to
-                            provide a default stylings that incorporate our custom components. Additionally, we refined
-                            animations and transitions to provide a smoother experience for developers.</p>
+                        <p class="light">Trism is a catalogue of educational materials that takes inspiration from websites such as IMDB, Goodreads, MyAnimeList or PCPartPicker and lets people compile their own lists of educational material such as books, videos, online courses and websites, etc. Each list is saved individually and can be used for personal reference or shared with others.</p>
                     </div>
                 </div>
                 <br><br><br>
 
+
+
+
+            </div>
+
+            <div class="row">
+                <div class="col s12 m3"></div>
                 <div class="col s12 m6">
                     <div class="icon-block">
                         <img class="responsive-img circle" src="https://images.pexels.com/photos/46274/pexels-photo-46274.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
@@ -169,21 +170,16 @@
                 </div>
 
                 <br><br>
+            </div>
 
-                <div class="row">
+            <div class="row">
+                <div class="col s12 m3"></div>
+                <div class="col s12 m6 center">
+                    <div class="icon-block">
+                        <h5 class="center">How to use Trism</h5>
+                        <br>
+                        <p class="light">First, make an account by clicking Register at the top.<br><br> Once you've registered, log in (on first registration, you'll be logged in automatically. <br><br> The Profile button will bring you to your Profile from where you can see your lists, your personal info (just the Username at the moment), and your subscription details. <br><br> Clicking on "Create new List" will bring you to a page with a blank list, which you can fill in by clicking on the buttons for adding new items at the bottom of the page and filling in the input form that pops up.</p>
 
-                    <div class="col s12 m6">
-                        <div class="icon-block">
-                            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-                            <h5 class="center">How to use Trism</h5>
-
-                            <p class="light">We did most of the heavy lifting for you to provide a default stylings that
-                                incorporate our custom components. Additionally, we refined animations and transitions to
-                                provide a smoother experience for developers. We did most of the heavy lifting for you to
-                                provide a default stylings that incorporate our custom components. Additionally, we refined
-                                animations and transitions to provide a smoother experience for developers.</p>
-
-                        </div>
                     </div>
                 </div>
             </div>
@@ -377,7 +373,7 @@
                 console.log(cred.user);
                 document.getElementById('confirmuser').innerHTML = "";
                 document.getElementById('finishedsignin').innerHTML = "You have been logged in. Click anywhere else on the page to close this window.";
-                
+
                 //document.getElementById('confirmuser').innerHTML = "Password doesn't match, or User doesn't exist.";
             });
 

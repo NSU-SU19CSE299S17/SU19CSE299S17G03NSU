@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df00fe12-d3eb-422b-8068-94058c8b419d" name="Default Changelist" comment="">
+
       <change beforePath="$PROJECT_DIR$/Project Code/source/js/listdb.js" beforeDir="false" afterPath="$PROJECT_DIR$/Project Code/source/js/listdb.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project Code/source/js/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/Project Code/source/js/profile.js" afterDir="false" />
+
       <change beforePath="$PROJECT_DIR$/Project Code/source/pages/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project Code/source/pages/profile.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,12 +19,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project Code/source/index.html">
           <provider selected="true" editor-type-id="text-editor">
+
             <state relative-caret-position="568">
               <caret line="368" column="24" selection-start-line="368" selection-start-column="24" selection-end-line="368" selection-end-column="24" />
+
             </state>
           </provider>
         </entry>
       </file>
+
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project Code/source/js/listdb.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -44,8 +49,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Project Code/source/js/profile.js">
           <provider selected="true" editor-type-id="text-editor">
+
             <state relative-caret-position="221">
               <caret line="13" column="51" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
+
             </state>
           </provider>
         </entry>
@@ -71,15 +78,18 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Project Code/source/pages/library_list.html" />
-        <option value="$PROJECT_DIR$/Project Code/source/pages/library.html" />
         <option value="$PROJECT_DIR$/Project Code/source/js/webscraper.js" />
         <option value="$PROJECT_DIR$/Project Code/source/js/mylist.js" />
         <option value="$PROJECT_DIR$/Project Code/source/js/index.js" />
+        <option value="$PROJECT_DIR$/Project Code/source/js/listdb.js" />
         <option value="$PROJECT_DIR$/Project Code/source/index.html" />
+        <option value="$PROJECT_DIR$/Project Code/source/pages/profile.html" />
         <option value="$PROJECT_DIR$/Project Code/source/pages/mylist.html" />
+
         <option value="$PROJECT_DIR$/Project Code/source/js/listdb.js" />
         <option value="$PROJECT_DIR$/Project Code/source/pages/profile.html" />
         <option value="$PROJECT_DIR$/Project Code/source/js/profile.js" />
+
       </list>
     </option>
   </component>
@@ -193,6 +203,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+
     <option name="totallyTimeSpent" value="54161000" />
   </component>
   <component name="ToolWindowManager">
@@ -255,6 +266,7 @@
         </state>
       </provider>
     </entry>
+
     <entry file="file://$PROJECT_DIR$/Project Code/source/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
@@ -266,16 +278,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-942">
           <caret line="62" column="16" lean-forward="true" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project Code/source/pages/library.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-656">
-          <caret line="78" column="25" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -302,12 +304,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Project Code/source/index.html">
       <provider selected="true" editor-type-id="text-editor">
+
         <state relative-caret-position="568">
           <caret line="368" column="24" selection-start-line="368" selection-start-column="24" selection-end-line="368" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Project Code/source/pages/profile.html">
+
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="149" column="20" lean-forward="true" selection-start-line="149" selection-start-column="20" selection-end-line="149" selection-end-column="20" />
@@ -316,6 +320,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Project Code/source/js/profile.js">
       <provider selected="true" editor-type-id="text-editor">
+
         <state relative-caret-position="221">
           <caret line="13" column="51" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
         </state>
