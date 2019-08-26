@@ -62,42 +62,46 @@ Features that were implemented in the project include:
 #### Interactive Front-End Website
 The website is hosted on Google Firebase and used as a front end for the user to visit and interact with, located at [Trism](https://trism-def99.firebaseapp.com/). It is divided into four sections: the landing page, the profile page, the lists and the library. The first four sections were completed and all implemented, while the latter is currently a placebo for possible future development.
 
+The website was created in HTML, CSS and Javascript.  We used Materialize CSS as a CSS framework. The initial setup of the website was based off one of MaterializeCSS's given templates.
+
 #### Back-End Firestore Database
-For the needs of a flexible, high speed database suitable for working with in javascript, Firebase Firestore was used. As this database uses the same platform as our web hosting, the integration process was simplified. The database is divided into an Users table and a Lists table. The Users table is used for user authentication, registration and logging in, while the lists table contains the names of a list, the owner of the list and a nested table containing the list itself.
+For the needs of a flexible, high speed database suitable for working with in javascript, Firebase Firestore was used. As this database uses the same platform as our web hosting, the integration process was simplified. 
+
+The database is divided into an Users table and a Lists table. The Users table is used for user authentication, registration and logging in, while the lists table contains the names of a list, the owner of the list and a nested table containing the list itself. As the Database is a noSQL DB, it exists entirely as JSON files with no need for SQL.
 
 #### Lists
-User's can compile lists of resources they find online and add it to their 'My Lists' tab, found on the user's profile page. Each list is saved into the database using a unique ID. Information such as the name of the resource, resource type, url and review is taken from the user and added to the database when the 'Add' button is pressed. Users can view and edit compiled lists after they have been created. A unique url is generated for each list which can be used to develop a 'Share List' feature, in the future.
+Users can compile lists of resources they find online and add it to their 'My Lists' tab, found on the user's profile page. Each list is saved into the database using a unique ID. Information such as the name of the resource, resource type, url and review is taken from the user and added to the database when the 'Add' button is pressed. Users can view and edit compiled lists after they have been created. A unique url is generated for each list which can be used to develop a 'Share List' feature, in the future.
 
+We used a Materialize modal and forms to build the menu/form for adding a new list in HTML+CSS. Using JS, we added a script in the listdb.js file that reads the input info and uses one of Firebase's built-in functions to update the database.
 
 #### User Registration and Log-In
+Users can create an account. At this stage, only the email address, password, and a confirming password are needed. Once the user has created an account, they will be automatically logged in. If they already have an account, they can log in with the Log In button, or log out.
 
-
+Both registration and login forms are placed in modals which can be opened from the navbar at the top. Firebase's built-in authentication functions are used to create and log users in. Logged in users' info can be accessed through firebase's built-in credentials.
 
 #### User Transactions/Subscriptions
-In order to gain access to additional features and services, users have the option to subscribe to the website. If the user chooses to subscribe, the date of subscription is saved to the database and a unique ID for each subscription is generated. The unique ID along with date of subscription, can be viewed on the subscriptions tab of the user's profile page. Further development of this feature would allow user's to upgrade their account and access exclusive features.
+In order to gain access to additional features and services, users have the option to subscribe to the website. If the user chooses to subscribe, the date of subscription is saved to the database and a unique ID for each subscription is generated. The unique ID along with date of subscription, can be viewed on the subscriptions tab of the user's profile page. Further development of this feature would allow users to upgrade their account and access exclusive features.
 
+When an user subscribes, the JS script reads their credentials, records the timestamp, then adds those two to a Subscription table in the database.
 
 ## 6. Features not Implemented
 
 Features that could not be implemented due to various restrictions in time, skills or technology include:
 
 #### Web-Scraping from user-entered URLs
-
+While originally planned, webscraping could not be carried out for several reasons. Firstly, webscraping the titles of books from a given URL from Amazon is not possible due to Amazon's bot protection. Using Browser User Agents to bypass it did not work. To carry out webscraping would have required using the AWS API, which is a premium feature. Similar protections existed for other websites such as Udemy, making the webscraping feature highly inconsistent.
 
 #### Tagging and User Suggestions System
-
-
-#### Universal Library Containing Aggregated Info
-
+As a lot of time was dedicated into setting up the adding-to-lists function, we were unable to actually set up a list of examples in advance. This meant there was no data set to work off to build a suggestions system (which would use simple graphical machine learning models like linear and multivar regression).
 
 #### Deletion of resources from compiled lists
-
+In Firebase, deletion requires additional checks. Due to a lack of time, we did not implement the ability to actually delete an item from a list.
 
 ## 7. Possible Future Updates
 
 In addition to all the features not implemented that could be worked on in the future, there are several other future plans:
-* Changing Hosting Plan to a different provider or a higher tier of Firebase from the Free Tier
-* Implementing a proper payment system for users who want to donate or recieve additional 'subscriber-only' privileges.
+* Changing Hosting Plan to a different provider or a higher tier of Firebase from the Free Tier.
+* Implementing a proper payment system for users who want to donate or recieve additional 'subscriber-only' privileges. We could use a proper payment portal such as Google Pay, Credit Cards or various E-Wallets.
 * A Mobile Application that would allow users to take advantage of this website's features in an optimized app (as opposed to the mobile version of a browser page) while on the go.
 
 ## 8. Business Plan
@@ -107,5 +111,4 @@ We expect there will be lot of traffic from students, teachers and everyone who 
 Additionally, this website can operate on a subscriber-only model. New users would recieve a 3-month period of free trial, following which they would have to subscribe to the website. Subscription fees can be kept low, ranging from $5-$10 annually depending on userbase demographics. If the subscriber model is too restrictive, we can switch to a freemium model where users can use the website forever but with limitations such as plenty of advertisements or a limit on the number of lists they can create.
 
 
-## 9. Credits
 
