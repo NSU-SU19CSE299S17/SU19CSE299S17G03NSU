@@ -59,12 +59,22 @@ firebase.auth().onAuthStateChanged(function(user) {
                   })
                 }) 
 
-            db.collection('List').where('User','==', email).get().then((snapshot) => {
+            db.collection('Subscriptions').where('User','==', email).get().then((snapshot) => {
               snapshot.docs.forEach(doc => {
             
               const id= doc.id;
               console.log(doc.id);
               sortlistSub(doc);
+            
+              });
+            });
+
+            db.collection('Lists').where('Username','==', email).get().then((snapshot) => {
+              snapshot.docs.forEach(doc => {
+            
+              const id= doc.id;
+              console.log(doc.id);
+              sortlistMyList(doc);
             
               });
             });
@@ -92,6 +102,24 @@ firebase.auth().onAuthStateChanged(function(user) {
           newCell1.appendChild(newText1);
         
         }
+
+        function sortlistMyList(doc){
+
+          const nameOfList= doc.data().ListName;
+        
+          var tableRef = document.getElementById('myList-table');
+          
+            // Insert a row in the table after the last row
+            var newRow   = tableRef.insertRow(-1);
+          
+            // Insert a cell in the row, starting from index 0
+            var newCell  = newRow.insertCell(0);
+          
+            // Append a text node to the cell
+            var newText  = document.createTextNode(nameOfList);
+          
+            newCell.appendChild(newText);
+          }
 
 } else {
   console.log("No User Signed In");
