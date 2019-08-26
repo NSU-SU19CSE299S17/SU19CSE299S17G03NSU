@@ -45,7 +45,8 @@ firebase.auth().onAuthStateChanged(function(user) {
                 
                   Username: email,
                   DateCreated:firebase.firestore.FieldValue.serverTimestamp(),
-                  ListName: modalText
+                  ListName: modalText,
+                  GeneratedUrl: "mylist.html?"+modalText+"&"+docRef.id
 
                 })
                 .then(function(docRef) {
@@ -106,6 +107,7 @@ firebase.auth().onAuthStateChanged(function(user) {
         function sortlistMyList(doc){
 
           const nameOfList= doc.data().ListName;
+          const generatedUrl=doc.data().GeneratedUrl;
         
           var tableRef = document.getElementById('myList-table');
           
@@ -116,9 +118,9 @@ firebase.auth().onAuthStateChanged(function(user) {
             var newCell  = newRow.insertCell(0);
           
             // Append a text node to the cell
-            var newText  = document.createTextNode(nameOfList);
-          
-            newCell.appendChild(newText);
+            
+            newCell.innerHTML = '<a href= "'+generatedUrl+'">'+nameOfList+'</a>';
+
           }
 
 } else {
