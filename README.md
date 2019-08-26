@@ -23,7 +23,7 @@
 
 ## 1. Project 
 
-Trism is a catalogue of educational daterials that takes inspiration from websites such as IMDB, Goodreads, MyAnimeList or PCPartPicker and lets people compile their own lists of educational material such as books, videos, online courses and websites, etc. Each list is saved individually and can be used for personal reference or shared with others.
+Trism is a catalogue of educational materials that takes inspiration from websites such as IMDB, Goodreads, MyAnimeList or PCPartPicker and lets people compile their own lists of educational materials such as books, videos, online courses and websites, etc. Each list is saved individually and can be used for personal reference or shared with others.
 
 Currently, the website is a work in progress and is being hosted on Google Firebase at the following link:
 
