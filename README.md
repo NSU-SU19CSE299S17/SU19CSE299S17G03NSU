@@ -66,12 +66,15 @@ The website is hosted on Google Firebase and used as a front end for the user to
 For the needs of a flexible, high speed database suitable for working with in javascript, Firebase Firestore was used. As this database uses the same platform as our web hosting, the integration process was simplified. The database is divided into an Users table and a Lists table. The Users table is used for user authentication, registration and logging in, while the lists table contains the names of a list, the owner of the list and a nested table containing the list itself.
 
 #### Lists
+User's can compile lists of resources they find online and add it to their 'My Lists' tab, found on the user's profile page. Each list is saved into the database using a unique ID. Information such as the name of the resource, resource type, url and review is taken from the user and added to the database when the 'Add' button is pressed. Users can view and edit compiled lists after they have been created. A unique url is generated for each list which can be used to develop a 'Share List' feature, in the future.
 
 
 #### User Registration and Log-In
 
 
+
 #### User Transactions/Subscriptions
+In order to gain access to additional features and services, users have the option to subscribe to the website. If the user chooses to subscribe, the date of subscription is saved to the database and a unique ID for each subscription is generated. The unique ID along with date of subscription, can be viewed on the subscriptions tab of the user's profile page. Further development of this feature would allow user's to upgrade their account and access exclusive features.
 
 
 ## 6. Features not Implemented
@@ -87,6 +90,9 @@ Features that could not be implemented due to various restrictions in time, skil
 #### Universal Library Containing Aggregated Info
 
 
+#### Deletion of resources from compiled lists
+
+
 ## 7. Possible Future Updates
 
 In addition to all the features not implemented that could be worked on in the future, there are several other future plans:
@@ -98,7 +104,7 @@ In addition to all the features not implemented that could be worked on in the f
 
 We expect there will be lot of traffic from students, teachers and everyone who goes on the internet for academic and learning purposes. Therefore, monetizing the website through advertisements should be straightforward. High traffic would ensure a relatively high number of views and clicks, making it an attractive prospect for those looking to sponsor the website.
 
-Additionally, this website can operate on a subscriber-only model. New users would recieve a 3-month period of free trial, following which they would have to subscribe to the website. Subscription fees can be kept low, ranging from $5-$10 annually depending on userbase demographics. If the subscriber model is too restrictive, we can switch to a freemium model where users can use the website forever but with limitations such as plenty of avertisements or a limit on the number of lists they can create.
+Additionally, this website can operate on a subscriber-only model. New users would recieve a 3-month period of free trial, following which they would have to subscribe to the website. Subscription fees can be kept low, ranging from $5-$10 annually depending on userbase demographics. If the subscriber model is too restrictive, we can switch to a freemium model where users can use the website forever but with limitations such as plenty of advertisements or a limit on the number of lists they can create.
 
 
 ## 9. Credits
